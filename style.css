@@ -9,18 +9,20 @@ h1 {
     background-color: #5C6B73;
     color: #F1D302;
     height: 150px;
+    font-size: 135px;
 }
 
 /* Catoregory Button Group Below ......... */
 .category-buttons {
     display: flex;
-    justify-content:  space-around;
+    justify-content: space-around;
 }
 
 /* Each Category Button Below.......... */
 #power-tools {
     font-size: 32px;
     background-color:#925E78;
+    
 }
 
 #hand-tools {
@@ -38,6 +40,11 @@ h1 {
     background-color:#925E78;
 }
 
+/* Game intro Text Below....... */
+#intro-text {
+    font-size: 24px;
+    margin: 5%;
+}
 
 
 footer {
