@@ -8,6 +8,44 @@ body {
 h1 {
     background-color: #5C6B73;
     color: #F1D302;
-    width: auto;
     height: 150px;
+}
+
+/* Catoregory Button Group Below ......... */
+.category-buttons {
+    display: flex;
+    justify-content:  space-around;
+}
+
+/* Each Category Button Below.......... */
+#power-tools {
+    font-size: 32px;
+    background-color:#925E78;
+}
+
+#hand-tools {
+    font-size: 32px;
+    background-color:#925E78;
+}
+
+#speciality-tools {
+    font-size: 32px;
+    background-color:#925E78;
+}
+
+#equipment {
+    font-size: 32px;
+    background-color:#925E78;
+}
+
+
+
+footer {
+    background-color: #5C6B73;
+    color: #F1D302;
+    width: auto;
+    height: 50px;
+    text-align: start;
+    font-size: 12px;
+    
 }
