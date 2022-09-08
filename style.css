@@ -1,6 +1,13 @@
 body {
-    background-color: #5C6B73;
+    background-color: black;
     font-size: 16px;
     text-align: center;
     color: white;
+}
+
+h1 {
+    background-color: #5C6B73;
+    color: #F1D302;
+    width: auto;
+    height: 150px;
 }
