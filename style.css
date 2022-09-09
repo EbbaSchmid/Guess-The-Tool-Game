@@ -12,13 +12,13 @@ h1 {
     font-size: 135px;
 }
 
-/* Catoregory Button Group Below ......... */
+/* Category Button Group Below ......... */
 .category-buttons {
     display: flex;
     justify-content: space-around;
 }
 
-/* Each Category Button Below.......... */
+/* Individual Category Buttons Below.......... */
 #power-tools {
     font-size: 32px;
     background-color:#925E78;
@@ -46,13 +46,13 @@ h1 {
     margin: 5%;
 }
 
-
+/* Page Footer Below............ */
 footer {
     background-color: #5C6B73;
     color: #F1D302;
     width: auto;
     height: 50px;
-    text-align: start;
-    font-size: 12px;
+    text-align: center;
+    font-size: 14px;
     
 }
