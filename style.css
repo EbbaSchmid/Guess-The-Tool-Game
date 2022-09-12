@@ -10,6 +10,7 @@ h1 {
     color: #F1D302;
     height: 150px;
     font-size: 135px;
+    text-align:  center;
 }
 
 /* Category Button Group Below ......... */
@@ -46,11 +47,10 @@ h1 {
     margin: 5%;
 }
 
-#sawZall {
-    width: 350px;
-    height: 500px;
-    align-items: left;
-}
+
+/* Tool Images Below....... */
+
+
 
 
 
