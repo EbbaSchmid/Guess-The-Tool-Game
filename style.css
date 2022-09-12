@@ -54,6 +54,7 @@ h1 {
 #game-section {
     display: flex;
     column-count: 2;
+    margin: 0 0 40px 0;
     justify-content: space-around;
 }
 
@@ -63,7 +64,6 @@ h1 {
 
 #questionPhoto {
     border: 5px solid #F1D302;
-    margin: 20px 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -78,7 +78,7 @@ h1 {
 
 #questionList {
     border: 5px solid #F1D302;
-    margin: 20px 40px 40px;
+    /* margin: 0 0 40px 0; */
     display: flex;
     flex-direction: column;
     justify-content: start;
