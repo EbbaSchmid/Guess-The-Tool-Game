@@ -43,15 +43,15 @@ console.log ("equipQuestions")
 
 /*-------------- Event Listeners --------------------*/
 
-powerToolBtn.addEventListener('click', handleClick)
+powerToolBtn.addEventListener('click', pToolQuestions)
 
-handToolBtn.addEventListener('click', handleClick)
+handToolBtn.addEventListener('click', hToolQuestions)
 
-specialityToolBtn.addEventListener('click', handleClick)
+specialityToolBtn.addEventListener('click', sToolQuestions)
 
-equipBtn.addEventListener('click', handleClick)
+equipBtn.addEventListener('click', equipToolQuestions)
 
-nextBtn.addEventListener('click', handleClick)
+nextBtn.addEventListener('click', next)
 
 restartBtn.addEventListener('click', init)
 

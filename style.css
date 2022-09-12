@@ -54,7 +54,7 @@ h1 {
     display: flex;
     justify-content: end;
     align-self: end;
-    margin-left: 50%;
+    margin-left: auto;
     width: 400px;
     height: 500px;
 }
