@@ -1,4 +1,61 @@
 /*---------------- Constants ----------------*/
+
+
+
+// hToolQuestions
+// sToolQuestions
+// equipQuestions
+
+/*----------------- Variables (state) ---------------*/
+
+let winner
+
+
+
+
+
+
+/*------- Cached Element References ------------------*/
+const restartBtn = document.querySelector("restart")
+console.log ("restart")
+
+const powerToolsBtn = document.querySelector("pToolQuestions")
+console.log ("pToolQuestions")
+
+const handToolsBtn = document.querySelector("hToolQuestions")
+console.log ("hToolQuestions")
+
+const specialityToolsBtn = document.querySelector("sToolQuestions")
+console.log ("sToolQuestions")
+
+const equipmentBtn = document.querySelector("equipQuestions")
+console.log ("equipQuestions")
+
+// const powerToolQuestions = document.querySelector("")
+
+
+
+
+/*-------------- Event Listeners --------------------*/
+
+// powerToolsBtn.addEventListener('click', input(pToolQuestions))
+
+// console.log(qNumber1)
+
+/*----------- Functions -------------------*/
+// init()
+
+// function init () {
+//     questions = [null, null, null, null, null, null, null, null, null, null]
+//     winner = null
+//     render ()
+// }
+
+function handleClick(evt) {
+    let powerToolQuestions = parseInt(evt.target.id[1])
+    console.log(evt.target.id[1])
+}
+
 let pToolQuestions = {
     qNumber: 1,
     question: "What Power Tool is this?",
@@ -21,49 +78,3 @@ let pToolQuestions = {
     answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"],
 }
 console.log (pToolQuestions)
-
-
-// hToolQuestions
-// sToolQuestions
-// equipQuestions
-
-/*----------------- Variables (state) ---------------*/
-
-// pToolQuestions
-// qNumber
-// answerOptions
-
-
-
-
-
-/*------- Cached Element References ------------------*/
-const restartButton = document.querySelector("restart")
-console.log ("restart")
-
-const powerToolsBtn = document.querySelector("pToolQuestions")
-
-
-const handToolsBtn = document.querySelector("hToolQuestions")
-
-const specialityToolsBtn = document.querySelector("sToolQuestions")
-
-const equipmentBtn = document.querySelector("equipQuestions")
-
-// const powerToolQuestions = document.querySelector("")
-
-
-
-
-/*-------------- Event Listeners --------------------*/
-
-// powerToolsBtn.addEventListener('click', input(pToolQuestions))
-
-// console.log(qNumber1)
-
-/*----------- Functions -------------------*/
-init()
-
-
-    // function init ()
-
