@@ -1,27 +1,43 @@
-// 1) Define the required variables used to track the state of the game
-powerToolQuestions
-handToolQuestions
-specialityToolQuestions
-equipmentQuestions
+/*---------------- Constants ----------------*/
+// powerToolQuestions
+// handToolQuestions
+// specialityToolQuestions
+// equipmentQuestions
 
+/*----------------- Variables (state) ---------------*/
 
-// 2) Store cached element references
-
-const powerToolQuestions = document.querySelector(".pToolQuestions")
-
-// 3) Upon loading, the game state should be initialized, and a function should be called to render this game state
-
-
-
-// 4) The state of the game should be rendered to the user
+// pToolQuestions
+// qNumber
+// answerOptions
 
 
 
-// 5) Define the required constants
+
+
+/*------- Cached Element References ------------------*/
+const restartButton = document.getElementById("restart")
+
+const powerToolsBtn = document.getElementById("")
+
+const handToolsBtn = document.getElementById("")
+
+const powerToolQuestions = document.querySelector("")
+
+
+
+
+/*-------------- Event Listeners --------------------*/
+powerToolsBtn.addEventListener('click', input(pToolQuestions))
+
+// console.log(qNumber1)
+
+/*----------- Functions -------------------*/
+init()
+
 let pToolQuestions = {
     qNumber: 1,
     question: "What Power Tool is this?",
-    answer: "Saw Zall",
+    answer: 3,
     answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"],
 
     qNumber: 2,
@@ -41,13 +57,5 @@ let pToolQuestions = {
 
     }
 
+    // function init ()
 
-// 6) Handle a player clicking a square with a `handleClick` function
-
-
-
-// 7) Build the `getWinner` function
-
-
-
-// 8) Create Reset functionality
