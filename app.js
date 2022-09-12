@@ -1,4 +1,6 @@
 /*---------------- Constants ----------------*/
+let currentQuestion = 0
+let score = 0
 
 
 
@@ -18,6 +20,9 @@ let winner
 /*------- Cached Element References ------------------*/
 const restartBtn = document.querySelector("restart")
 console.log ("restart")
+
+const nextBtn = document.querySelector("next")
+console.log ("Next")
 
 const powerToolsBtn = document.querySelector("pToolQuestions")
 console.log ("pToolQuestions")
@@ -52,11 +57,11 @@ console.log ("equipQuestions")
 // }
 
 function handleClick(evt) {
-    let powerToolQuestions = parseInt(evt.target.id[1])
+    let pToolQuestions = parseInt(evt.target.id[1])
     console.log(evt.target.id[1])
 }
 
-let pToolQuestions = {
+let pToolQuestions = [{
     qNumber: 1,
     question: "What Power Tool is this?",
     answer: 3,
@@ -76,5 +81,5 @@ let pToolQuestions = {
     question: "What Power Tool is this?",
     answer: 3,
     answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"],
-}
+}]
 console.log (pToolQuestions)
