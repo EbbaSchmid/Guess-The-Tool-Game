@@ -51,6 +51,7 @@ h1 {
 
 .questionList {
     border: 5px solid #F1D302;
+    margin: 20px 40px 40px;
     display: flex;
     justify-content: end;
     align-self: end;
@@ -61,8 +62,8 @@ h1 {
 
 .questionList > p {
     display: flex;
-    justify-content: end;
-    align-self: end;
+    /* justify-content: start;
+    align-self: start; */
 }
 
 
