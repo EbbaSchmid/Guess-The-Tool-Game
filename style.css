@@ -54,13 +54,7 @@ h1 {
 #game-section {
     display: flex;
     column-count: 2;
-    /* flex-direction: column; */
-    /* /* justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-flow: column; */
-    grid-template-columns: 200px 200px;
-
+    justify-content: space-around;
 }
 
 
@@ -87,8 +81,8 @@ h1 {
     margin: 20px 40px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-self: end;
+    justify-content: start;
+    align-self: start;
     width: 400px;
     height: 500px;
 }
