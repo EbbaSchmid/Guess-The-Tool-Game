@@ -1,6 +1,6 @@
 /*---------------- Constants ----------------*/
 let currentQuestion = 0
-let score = 0
+let powerToolsAudio = new Audio ()
 
 
 
@@ -11,13 +11,15 @@ let score = 0
 /*----------------- Variables (state) ---------------*/
 
 let winner
-
+let score
 
 
 
 
 
 /*------- Cached Element References ------------------*/
+const countdownEl = document.getElementById('countdown')
+
 const restartBtn = document.querySelector("restart")
 console.log ("restart")
 
@@ -55,7 +57,7 @@ nextBtn.addEventListener('click', next)
 
 restartBtn.addEventListener('click', init)
 
-console.log(hello)
+console.log("hello")
 
 /*----------- Functions -------------------*/
 init()
@@ -64,32 +66,48 @@ function init () {
     let questions = pToolQuestions
     winner = null
     render ()
-}
+
 
 function handleClick(evt) {
     let pToolQuestions = parseInt(evt.target.pToolQuestions)
     console.log(pToolQuestions)
 }
 
-let pToolQuestions = [{
-    qNumber: 1,
-    question: "What Power Tool is this?",
-    answer: 3,
-    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"],
+let pToolQuestions = [
+    {question: "What Power Tool is this?",
+    answer: "Make into string",
+    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"]},
 
-    qNumber: 2,
-    question: "What Power Tool is this?",
+    {question: "What Power Tool is this?",
     answer: 1,
-    answerOptions: ["Drill", "Hammer Drill", "Saw Zall", "Big Drill"],
+    answerOptions: ["Drill", "Hammer Drill", "Saw Zall", "Big Drill"]},
 
-    qNumber: 3,
-    question: "What Power Tool is this?",
+    {question: "What Power Tool is this?",
     answer: 2,
-    answerOptions: ["Saw", "Circular Saw", "Band Saw", "Hack Saw"],
+    answerOptions: ["Saw", "Circular Saw", "Band Saw", "Hack Saw"]},
 
-    qNumber: 4,
-    question: "What Power Tool is this?",
+    {question: "What Power Tool is this?",
     answer: 3,
-    answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"],
-}]
+    answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"]},
+]
 console.log (pToolQuestions)
+
+
+
+
+// let timeLeft = 10;
+
+// let timer = setInterval(function() {
+//     countdownEl.textContent = timeLeft + ' seconds remaining.';
+//     timeLeft -= 1;
+//     if (timeLeft < 0) {
+//         countdownEl.textContent = 'Finished!'
+// 				confetti.start(500)
+//     }
+// }, 1000)
+
+
+
+
+
+}
