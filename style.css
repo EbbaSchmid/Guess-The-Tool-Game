@@ -1,4 +1,4 @@
-body {
+#Main-Game-Template {
     background-color: black;
     font-size: 16px;
     /* text-align: center; */
@@ -49,12 +49,20 @@ h1 {
     text-align:  center;
 }
 
+/* Rotating Game Section........... */
+
+.game-section {
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+
+}
 
 /* Photos will be displayed Below........ */
 
 .questionPhoto {
     border: 5px solid #F1D302;
-    margin: 20px 40px 40px;
+    margin: 20px 20px 20px;
     display: flex;
     justify-content: start;
     align-self: start;
