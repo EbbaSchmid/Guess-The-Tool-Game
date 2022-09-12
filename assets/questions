@@ -1,0 +1,18 @@
+    
+    // Power Tools Questions Below...............
+    
+    // question: "What Power Tool is this?",
+    // answer: "Make into string?",
+    // answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"],
+
+    // question: "What Power Tool is this?",
+    // answer: 1,
+    // answerOptions: ["Drill", "Hammer Drill", "Saw Zall", "Big Drill"],
+
+    // question: "What Power Tool is this?",
+    // answer: 2,
+    // answerOptions: ["Saw", "Circular Saw", "Band Saw", "Hack Saw"],
+
+    // question: "What Power Tool is this?",
+    // answer: 3,
+    // answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"],
