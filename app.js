@@ -1,13 +1,13 @@
 // 1) Define the required variables used to track the state of the game
-let powerToolQuestions
-let handToolQuestions
-let specialityToolQuestions
-let equipmentQuestions
+powerToolQuestions
+handToolQuestions
+specialityToolQuestions
+equipmentQuestions
 
 
 // 2) Store cached element references
 
-const powerToolQuestions = document.querySelector
+const powerToolQuestions = document.querySelector(".pToolQuestions")
 
 // 3) Upon loading, the game state should be initialized, and a function should be called to render this game state
 
@@ -18,16 +18,27 @@ const powerToolQuestions = document.querySelector
 
 
 // 5) Define the required constants
-let powerToolQuestions = {
+let pToolQuestions = {
     qNumber: 1,
     question: "What Power Tool is this?",
     answer: "Saw Zall",
-    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"]
+    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"],
 
     qNumber: 2,
     question: "What Power Tool is this?",
     answer: "Hammer Drill",
-    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"]
+    answerOptions: ["Drill", "Hammer Drill", "Saw Zall", "Big Drill"],
+
+    qNumber: 3,
+    question: "What Power Tool is this?",
+    answer: "Band Saw",
+    answerOptions: ["Saw", "Circular Saw", "Band Saw", "Hack Saw"],
+
+    qNumber: 4,
+    question: "What Power Tool is this?",
+    answer: "Circular Saw",
+    answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"],
+
     }
 
 
