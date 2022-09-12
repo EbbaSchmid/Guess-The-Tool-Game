@@ -53,14 +53,16 @@ h1 {
     border: 5px solid #F1D302;
     display: flex;
     justify-content: end;
-
     align-self: end;
+    margin-left: 50%;
     width: 400px;
     height: 500px;
 }
 
 .questionList > p {
-    
+    display: flex;
+    justify-content: end;
+    align-self: end;
 }
 
 
