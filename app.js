@@ -12,8 +12,14 @@ let powerToolsAudio = new Audio ()
 
 let winner
 let score
+
 let powerToolSound = new Audio("../assets/drill.mp3")
 
+let handToolSound = new Audio("../assets/hammering.mp3")
+
+let specialToolSound = new Audio("../assets/flame-ignition.mp3")
+
+let equipSound = new Audio("../assets/excavator-working.mp3")
 
 
 
@@ -49,11 +55,17 @@ powerToolBtn.addEventListener('click', function(evt){
     powerToolSound.play()
 })
 
-// handToolBtn.addEventListener('click', hToolQuestions)
+handToolBtn.addEventListener('click', function(evt){
+    handToolSound.play()
+})
 
-// specialityToolBtn.addEventListener('click', sToolQuestions)
+specialityToolBtn.addEventListener('click', function(evt){
+    specialToolSound.play()
+})
 
-// equipBtn.addEventListener('click', equipToolQuestions)
+equipBtn.addEventListener('click', function(evt){
+    equipSound.play()
+})
 
 // nextBtn.addEventListener('click', next)
 
