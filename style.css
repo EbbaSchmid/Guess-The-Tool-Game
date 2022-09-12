@@ -1,7 +1,7 @@
 body {
     background-color: black;
     font-size: 16px;
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 
@@ -45,6 +45,15 @@ h1 {
     font-size: 24px;
     margin: 5%;
 }
+
+#sawZall {
+    width: 350px;
+    height: 500px;
+    align-items: left;
+}
+
+
+
 
 
 /* Page Footer Below............ */
