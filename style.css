@@ -49,6 +49,24 @@ h1 {
     text-align:  center;
 }
 
+
+/* Photos will be displayed Below........ */
+
+.questionPhoto {
+    border: 5px solid #F1D302;
+    margin: 20px 40px 40px;
+    display: flex;
+    justify-content: start;
+    align-self: start;
+    margin-right: auto;
+    width: 400px;
+    height: 500px;
+}
+
+
+
+/* Questions will be displayed Below........ */
+
 .questionList {
     border: 5px solid #F1D302;
     margin: 20px 40px 40px;
@@ -87,16 +105,6 @@ h1 {
     justify-content: end;
     align-items: center;
 }
-
-
-
-
-/* Tool Images Below....... */
-
-
-
-
-
 
 
 /* Page Footer Below............ */
