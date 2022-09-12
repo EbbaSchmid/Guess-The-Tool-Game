@@ -20,32 +20,60 @@ h1 {
 }
 
 /* Individual Category Buttons Below.......... */
-#power-tools {
+#powerToolBtn {
     font-size: 32px;
     background-color:#925E78;
     
 }
 
-#hand-tools {
+#handToolBtn {
     font-size: 32px;
     background-color:#925E78;
 }
 
-#speciality-tools {
+#specialityToolBtn {
     font-size: 32px;
     background-color:#925E78;
 }
 
-#equipment {
+#equipBtn {
     font-size: 32px;
     background-color:#925E78;
 }
+
 
 /* Game intro Text Below....... */
 #intro-text {
     font-size: 24px;
     margin: 5%;
+    text-align:  center;
 }
+
+
+
+
+/* Other Buttons Below......... */
+
+.other-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#restartBtn {
+    font-size: 32px;
+    background-color: #A0CED9;
+    justify-content: end;
+    align-items: center;
+}
+
+#nextBtn {
+    font-size: 32px;
+    background-color: #A0CED9;
+    justify-content: end;
+    align-items: center;
+}
+
+
 
 
 /* Tool Images Below....... */

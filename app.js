@@ -61,7 +61,7 @@ console.log(hello)
 init()
 
 function init () {
-    questions = [null, null, null, null, null, null, null, null, null, null]
+    let questions = pToolQuestions
     winner = null
     render ()
 }
