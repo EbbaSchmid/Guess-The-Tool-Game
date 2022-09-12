@@ -12,7 +12,7 @@ let powerToolsAudio = new Audio ()
 
 let winner
 let score
-
+let powerToolSound = new Audio("../assets/drill.mp3")
 
 
 
@@ -45,19 +45,21 @@ console.log ("equipQuestions")
 
 /*-------------- Event Listeners --------------------*/
 
-powerToolBtn.addEventListener('click', pToolQuestions)
+powerToolBtn.addEventListener('click', function(evt){
+    powerToolSound.play()
+})
 
-handToolBtn.addEventListener('click', hToolQuestions)
+// handToolBtn.addEventListener('click', hToolQuestions)
 
-specialityToolBtn.addEventListener('click', sToolQuestions)
+// specialityToolBtn.addEventListener('click', sToolQuestions)
 
-equipBtn.addEventListener('click', equipToolQuestions)
+// equipBtn.addEventListener('click', equipToolQuestions)
 
-nextBtn.addEventListener('click', next)
+// nextBtn.addEventListener('click', next)
 
-restartBtn.addEventListener('click', init)
+// restartBtn.addEventListener('click', init)
 
-console.log("hello")
+// console.log("hello")
 
 /*----------- Functions -------------------*/
 init()
@@ -68,7 +70,7 @@ function init () {
     render ()
 
 
-function handleClick(evt) {
+function Click(evt) {
     let pToolQuestions = parseInt(evt.target.pToolQuestions)
     console.log(pToolQuestions)
 }
