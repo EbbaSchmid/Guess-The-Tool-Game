@@ -43,22 +43,32 @@ console.log ("equipQuestions")
 
 /*-------------- Event Listeners --------------------*/
 
-// powerToolsBtn.addEventListener('click', input(pToolQuestions))
+powerToolBtn.addEventListener('click', handleClick)
 
-// console.log(qNumber1)
+handToolBtn.addEventListener('click', handleClick)
+
+specialityToolBtn.addEventListener('click', handleClick)
+
+equipBtn.addEventListener('click', handleClick)
+
+nextBtn.addEventListener('click', handleClick)
+
+restartBtn.addEventListener('click', init)
+
+console.log(hello)
 
 /*----------- Functions -------------------*/
-// init()
+init()
 
-// function init () {
-//     questions = [null, null, null, null, null, null, null, null, null, null]
-//     winner = null
-//     render ()
-// }
+function init () {
+    questions = [null, null, null, null, null, null, null, null, null, null]
+    winner = null
+    render ()
+}
 
 function handleClick(evt) {
-    let pToolQuestions = parseInt(evt.target.id[1])
-    console.log(evt.target.id[1])
+    let pToolQuestions = parseInt(evt.target.pToolQuestions)
+    console.log(pToolQuestions)
 }
 
 let pToolQuestions = [{
