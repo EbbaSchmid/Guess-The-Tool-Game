@@ -51,10 +51,10 @@ h1 {
 
 /* Rotating Game Section........... */
 
-.game-section {
-    display: inline-flex;
+#game-section {
+    display: flex;
     column-count: 2;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* /* justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -70,7 +70,7 @@ h1 {
 #questionPhoto {
     border: 5px solid #F1D302;
     margin: 20px 20px 20px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-self: start;
@@ -85,16 +85,15 @@ h1 {
 #questionList {
     border: 5px solid #F1D302;
     margin: 20px 40px 40px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    margin-inline-end: auto;
     justify-content: end;
     align-self: end;
     width: 400px;
     height: 500px;
 }
 
-.questionList > p {
+#questionList > p {
     display: flex;
     /* justify-content: start;
     align-self: start; */
