@@ -239,33 +239,29 @@ let categories = {
 
 
 let hToolQuestions = [
-    // {question: "What Hand Tool is this?",
-    // img: "https://imgbox.com/oKdflYoX",
-    // id: "ChalkReel",
-    // // answer: 
-    // // answerOptions: [
-    // ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/oKdflYoX",
+    id: "ChalkReel",
+    answer: [3],
+    answerOptions: ["Tri-Square", "Spool", "Laser Level", "Chalk Reel"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/y9MLhtk1",
-//     id: "CatsPaw",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/y9MLhtk1",
+    id: "CatsPaw",
+    answer: [1],
+    answerOptions: ["Pry Bar", "Cats Paw", "Crow Bar", "Snips"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/VshJl3Ys",
-//     id: "WireStrippers",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/VshJl3Ys",
+    id: "WireStrippers",
+    answer: [0],
+    answerOptions: ["Wire Strippers", "Pliers", "Wire Snips", "Metal Cutters"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/9MEU2qnO",
-//     id: "SideCutters",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/9MEU2qnO",
+    id: "SideCutters",
+    answer: [3],
+    answerOptions: ["Pliers", "Wire Strippers", "Channel Locks", "Side Cutters"]},
 
 //     {question: "What Hand Tool is this?",
 //     img: "https://imgbox.com/C3VVUSTn",
