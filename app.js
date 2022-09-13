@@ -177,28 +177,28 @@ let hToolQuestions = [
 
     {question: "What Hand Tool is this?",
     img: "https://imgbox.com/VshJl3Ys",
-    id: 
+    id: "WireStrippers",
     answer: 
     answerOptions: [
     ]},
 
     {question: "What Hand Tool is this?",
-    img: 
-    id: 
+    img: "https://imgbox.com/9MEU2qnO",
+    id: "SideCutters",
     answer: 
     answerOptions: [
     ]},
 
     {question: "What Hand Tool is this?",
-    img: 
-    id: 
+    img: "https://imgbox.com/C3VVUSTn",
+    id: "PipeWrench",
     answer: 
     answerOptions: [
     ]},
 
     {question: "What Hand Tool is this?",
-    img: 
-    id: 
+    img: "https://imgbox.com/DAeVfkdG",
+    id: "FramingSquare",
     answer: 
     answerOptions: [
     ]},
