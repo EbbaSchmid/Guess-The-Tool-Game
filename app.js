@@ -10,6 +10,8 @@ let currentQuestion = 0
 
 /*----------------- Variables (state) ---------------*/
 
+
+
 let winner
 let score
 
@@ -22,6 +24,34 @@ let specialToolSound = new Audio("../assets/flame-ignition.mp3")
 let equipSound = new Audio("../assets/excavator-working.mp3")
 
 
+// let powerToolBtn = {
+//     audio: "powerToolSound",
+//     id: "powerToolBtn", 
+//     text: "Power Tools",
+//     questions: pToolQuestions,
+// }
+
+// let handToolBtn = {
+//     audio: handToolSound,
+//     id: "handToolBtn", 
+//     text: "Hand Tools",
+//     questions: hToolQuestions,
+// }
+
+// let specialityToolBtn = {
+//     audio: specialToolSound,
+//     id: "specialityToolBtn", 
+//     text: "Speciality Tools",
+//     questions: sToolQuestions,
+// }
+
+// let equipBtn = {
+//     audio: equipSound,
+//     id: "equipBtn", 
+//     text: "Equipment",
+//     questions: equipQuestions,
+// }
+
 
 /*------- Cached Element References ------------------*/
 const countdownEl = document.getElementById('countdown')
@@ -32,16 +62,16 @@ console.log ("restart")
 const nextBtn = document.querySelector("next")
 console.log ("Next")
 
-const powerToolsBtn = document.getElementById("pToolQuestions")
+const powerToolsBtn = document.getElementById("powerToolBtn")
 console.log ("pToolQuestions")
 
-const handToolsBtn = document.getElementById("hToolQuestions")
+const handToolsBtn = document.getElementById("handToolBtn")
 console.log ("hToolQuestions")
 
-const specialityToolsBtn = document.getElementById("sToolQuestions")
+const specialityToolsBtn = document.getElementById("specialityToolBtn")
 console.log ("sToolQuestions")
 
-const equipmentBtn = document.getElementById("equipQuestions")
+const equipmentBtn = document.getElementById("equipBtn")
 console.log ("equipQuestions")
 
 // const powerToolQuestions = document.querySelector("")
@@ -53,45 +83,46 @@ console.log ("equipQuestions")
 
 /*-------------- Event Listeners --------------------*/
 
+init()
 // create an array of categories, the object 
 
-powerToolBtn.addEventListener('click', function(evt){
+powerToolsBtn.addEventListener('click', () => {
     powerToolSound.play()
 })
 
-// handToolBtn.addEventListener('click', () => {
-//     handToolSound.volume = .10
-//     handToolSound.play()
-// })
+handToolsBtn.addEventListener('click', () => {
+    handToolSound.volume = .10
+    handToolSound.play()
+})
 
-// specialityToolBtn.addEventListener('click',() => {
-//     specialToolSound.volume = .10
-//     specialToolSound.play()
-// })
+specialityToolsBtn.addEventListener('click',() => {
+    specialToolSound.volume = .10
+    specialToolSound.play()
+})
 
-// equipBtn.addEventListener('click', () => {
-//     equipSound.volume = .10
-//     equipSound.play()
-// })
+equipmentBtn.addEventListener('click', () => {
+    equipSound.volume = .10
+    equipSound.play()
+})
 
-// nextBtn.addEventListener('click', next)
+nextBtn.addEventListener('click', next)
 
-// restartBtn.addEventListener('click', init)
+restartBtn.addEventListener('click', init)
 
-// console.log("hello")
+console.log("hello")
 
 /*----------- Functions -------------------*/
 
-init()
 
 
 
-function handleCategoryClick(audio, element){
-element.addEventListener('click', function(evt){
-    // audio.volume = .10
-    audio.play()
-})
-}
+
+// function handleCategoryClick(audio, element){
+// element.addEventListener('click', function(evt){
+//     // audio.volume = .10
+//     audio.play()
+// })
+// }
 
 
 let pToolQuestions = [
@@ -157,7 +188,12 @@ let pToolQuestions = [
 ]
 console.log (pToolQuestions)
 
-
+let powerToolBtn = {
+    audio: "powerToolSound",
+    id: "powerToolBtn", 
+    text: "Power Tools",
+    questions: pToolQuestions,
+}
 
 
 // let hToolQuestions = [
@@ -388,43 +424,14 @@ console.log (pToolQuestions)
 
 
 
-let powerToolBtn = {
-    audio: "powerToolSound",
-    id: "powerToolBtn", 
-    text: "Power Tools",
-    questions: pToolQuestions,
-}
-
-let handToolBtn = {
-    audio: handToolSound,
-    id: "handToolBtn", 
-    text: "Hand Tools",
-    questions: hToolQuestions,
-}
-
-let specialityToolBtn = {
-    audio: specialToolSound,
-    id: "specialityToolBtn", 
-    text: "Speciality Tools",
-    questions: sToolQuestions,
-}
-
-let equipBtn = {
-    audio: equipSound,
-    id: "equipBtn", 
-    text: "Equipment",
-    questions: equipQuestions,
-}
-
-
-function buttons(toolCategory) {
-    const categoryButtons = document.getElementById("categoryButtons")
-    const categoryButton = document.createElement("button")
-    categoryButton.setAttribute("id", toolCategory.id)
-    categoryButton.appendChild(document.createTextNode(toolCategory.text))
-    categoryButtons.appendChild(categoryButton)
-    handleCategoryClick(toolCategory.audio, categoryButton)
-}
+// function buttons(toolCategory) {
+//     const categoryButtons = document.getElementById("categoryButtons")
+//     const categoryButton = document.createElement("button")
+//     categoryButton.setAttribute("id", toolCategory.id)
+//     categoryButton.appendChild(document.createTextNode(toolCategory.text))
+//     categoryButtons.appendChild(categoryButton)
+//     handleCategoryClick(toolCategory.audio, categoryButton)
+// }
 
 
 
@@ -433,7 +440,7 @@ function init () {
     // winner = null
     // render ()
     console.log("hello")
-    buttons(categoryButtons)
+    // buttons(powerToolBtn)
 }
 
 
