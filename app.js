@@ -11,7 +11,6 @@
 
 let currentQuestions 
 
-
 let winner
 let score
 
@@ -92,10 +91,7 @@ init()
 powerToolsBtn.addEventListener('click', handleCategory)
 
 
-handToolsBtn.addEventListener('click', () => {
-    handToolSound.volume = .10
-    handToolSound.play()
-})
+handToolsBtn.addEventListener('click', handleCategory)
 
 specialityToolsBtn.addEventListener('click',() => {
     specialToolSound.volume = .10
@@ -119,12 +115,12 @@ console.log("hello")
 
 /*----------- Functions -------------------*/
 function init () {
-    // let questions = pToolQuestions
     // winner = null
     // render ()
     console.log("hello")
     // buttons(powerToolBtn)
 }
+
 
 function handleCategory (e){
     console.log(e.target.id)
@@ -151,6 +147,8 @@ function renderQuestion (q){
 //     audio.play()
 // })
 // }
+
+
 
 // remove data to assets data file
 let pToolQuestions = [
@@ -216,8 +214,7 @@ let pToolQuestions = [
 ]
 console.log (pToolQuestions)
 
-
-const categories = { 
+let categories = { 
     powerToolBtn: {
         audio: "powerToolSound",
         id: "powerToolBtn", 
@@ -228,9 +225,13 @@ const categories = {
         audio: "handToolSound",
         id: "handToolBtn", 
         text: "Hand Tools",
-        questions: hToolQuestions,
+        // questions: hToolQuestions,
     }
 }
+
+
+
+
 
 
 // function powerToolBtn (toolCategory) {
@@ -243,13 +244,13 @@ const categories = {
 // }
 
 
-// let hToolQuestions = [
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/oKdflYoX",
-//     id: "ChalkReel",
-//     answer: 
-//     answerOptions: [
-//     ]},
+let hToolQuestions = [
+    // {question: "What Hand Tool is this?",
+    // img: "https://imgbox.com/oKdflYoX",
+    // id: "ChalkReel",
+    // // answer: 
+    // // answerOptions: [
+    // ]},
 
 //     {question: "What Hand Tool is this?",
 //     img: "https://imgbox.com/y9MLhtk1",
@@ -313,7 +314,7 @@ const categories = {
 //     answer: 
 //     answerOptions: [
 //     ]},
-// ]
+]
 
 // console.log(hToolQuestions)
 
