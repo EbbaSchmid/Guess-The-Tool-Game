@@ -68,7 +68,14 @@ const questionPhoto = document.getElementById("questionPhoto")
 
 const questionList = document.getElementById("questionList")
 
-const answerButtons = document.getElementById("answerButtons")
+const answerABtn = document.getElementById("answerABtn")
+
+const answerBBtn = document.getElementById("answerBBtn")
+
+const answerCBtn = document.getElementById("answerCBtn")
+
+const answerDBtn = document.getElementById("answerDBtn")
+
 
 
 // Main Category Buttons Below ...............
@@ -104,7 +111,13 @@ equipmentBtn.addEventListener('click', handleCategory)
 
 
 // Rotating Game Areas .................
-answerButtons.addEventListener("click", findAnswer)
+answerABtn.addEventListener("click", findAnswer)
+
+answerBBtn.addEventListener("click", findAnswer)
+
+answerCBtn.addEventListener("click", findAnswer)
+
+answerDBtn.addEventListener("click", findAnswer)
 
 
 
@@ -127,13 +140,20 @@ function init () {
 function findAnswer (){
     let answerIdx = currentQuestions[questionObjectIdx][answer]
     let correctAnswer = currentQuestions[questionObjectIdx][answerOptions][answerIdx]
-    
+    let answerABtn = currentQuestions[questionObjectIdx][answerIdx]
+    let answerBBtn = currentQuestions[questionObjectIdx][answerIdx]
+    let answerCBtn = currentQuestions[questionObjectIdx][answerIdx]
+    let answerDBtn = currentQuestions[questionObjectIdx][answerIdx]
+
+}
     // answerOptions.array[]
     // access the questionObject of current questions with the questionObjectIdx access answers array with the answer idx number from object 
     // currentquestions.idx answer.array[]
-    
     // search through question answer array to true/false if selected button is correct answer after answerButtons is clicked
-}
+
+
+
+
 
 
 function handleCategory (e){
