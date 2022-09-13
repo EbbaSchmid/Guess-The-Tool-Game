@@ -88,7 +88,7 @@ init()
 
 function handleCategoryClick(audio, element){
 element.addEventListener('click', function(evt){
-    audio.volume = .10
+    // audio.volume = .10
     audio.play()
 })
 }
@@ -96,23 +96,65 @@ element.addEventListener('click', function(evt){
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",
-    img:"",
-    answer: "Make into string",
-    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"]},
-
-
-    {question: "What Power Tool is this?",
-    answer: "Make into string",
-    answerOptions: ["Drill", "Hammer Drill", "Saw Zall", "Big Drill"]},
+    img:"https://imgbox.com/g8Ep78F8",
+    id: "BandSaw",
+    answer: "Band Saw",
+    answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Band Saw"]},
 
     {question: "What Power Tool is this?",
-    answer: "Make into string",
-    answerOptions: ["Saw", "Circular Saw", "Band Saw", "Hack Saw"]},
+    img: "https://imgbox.com/zf5U4MGc",
+    id: "CircularSaw",
+    answer: "Circular Saw",
+    answerOptions: ["Saw", "Circular Saw", "Band Saw", "Saw Zall"]},
 
     {question: "What Power Tool is this?",
-    answer: "Make into string",
-    answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"]},
+    img:"https://imgbox.com/dpSdsN09",
+    id: "Grinder",
+    answer: "Grinder",
+    answerOptions: ["Grinder", "Circular Saw", "Band Saw", "Hack Saw"]},
+
+    {question: "What Power Tool is this?",
+    img: "https://imgbox.com/hoo7FEkn",
+    id: "ConcreteSaw",
+    answer: "Concrete Saw",
+    answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
+
+    {question: "What Power Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
+
+    {question: "What Power Tool is this?",
+    img: "https://imgbox.com/rS10g8DP",
+    id: "HammerDrill",
+    answer: "Hammer Drill",
+    answerOptions: ["Impact Drill", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
+
+    {question: "What Power Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
+
+
+
 ]
+console.log (pToolQuestions)
+
+let hToolQuestions = [
+
+]
+
+let sToolQuestions = [
+
+]
+
+let equipQuestions = [
+
+]
+
+
 
 
 let powerToolBtn = {
@@ -160,7 +202,7 @@ function init () {
     // winner = null
     // render ()
     console.log("hello")
-    buttons(categoryButton)
+    buttons(categoryButtons)
 }
 
 
