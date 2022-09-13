@@ -161,22 +161,235 @@ console.log (pToolQuestions)
 
 
 let hToolQuestions = [
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
 
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Hand Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
 ]
+
+console.log(hToolQuestions)
+
+
 
 let sToolQuestions = [
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
 
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Speciality Tool is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
 ]
+
+console.log(sToolQuestions)
+
+
 
 let equipQuestions = [
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
+
+    {question: "What Equipment is this?",
+    img: 
+    id: 
+    answer: 
+    answerOptions: [
+    ]},
 
 ]
-
+console.log (equipQuestions)
 
 
 
 let powerToolBtn = {
-    audio: powerToolSound,
+    audio: "powerToolSound",
     id: "powerToolBtn", 
     text: "Power Tools",
     questions: pToolQuestions,
