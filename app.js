@@ -120,27 +120,45 @@ let pToolQuestions = [
     answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
 
     {question: "What Power Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
-
-    {question: "What Power Tool is this?",
     img: "https://imgbox.com/rS10g8DP",
     id: "HammerDrill",
     answer: "Hammer Drill",
-    answerOptions: ["Impact Drill", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
+    answerOptions: ["Impact Drill", "Jack Hammer", "Concrete Saw", "Hammer Drill"]},
 
     {question: "What Power Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
+    img: "https://imgbox.com/ROQeT71S",
+    id: "ImpactDrill",
+    answer: "Impact Drill",
+    answerOptions: ["Impact Driver", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
+    
+    {question: "What Power Tool is this?",
+    img: "https://imgbox.com/IlOtrHHU",
+    id: "ImpactDriver",
+    answer: "Impact Driver",
+    answerOptions: ["Impact Driver", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
+    
+    {question: "What Power Tool is this?",
+    img: "https://imgbox.com/QiRYIrLM",
+    id: "JackHammer",
+    answer: "Jack Hammer",
+    answerOptions: ["Impact Driver", "Jack Hammer", "Hammer Drill", "SawZall"]},
+    
+    {question: "What Power Tool is this?",
+    img: "https://imgbox.com/hZg1OZMg",
+    id: "MiterSaw",
+    answer: "Miter Saw",
+    answerOptions: ["Circular Saw", "Jack Hammer", "Radial Arm Saw", "Miter Saw"]},
 
-
-
+    {question: "What Power Tool is this?",
+    img: "https://imgbox.com/A0j2G3cO",
+    id: "SawZall",
+    answer: "SawZall",
+    answerOptions: ["SawZall", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
 ]
 console.log (pToolQuestions)
+
+
+
 
 let hToolQuestions = [
 
