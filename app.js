@@ -1,6 +1,6 @@
 /*---------------- Constants ----------------*/
 let currentQuestion = 0
-// let powerToolsAudio = new Audio ()
+
 
 
 
@@ -116,7 +116,13 @@ let powerToolBtn = {
     text: "Power Tools",
     questions: pToolQuestions,
 }
-// repeat each button as above, as one var array
+
+let handToolBtn = {
+    audio: handToolSound,
+    id: "handToolBtn", 
+    text: "Hand Tools",
+    questions: pToolQuestions,
+}
 
 
 function buttons(toolCategory) {
