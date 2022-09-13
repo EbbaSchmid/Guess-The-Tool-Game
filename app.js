@@ -10,7 +10,7 @@
 /*----------------- Variables (state) ---------------*/
 
 let currentQuestions 
-
+let questionObjectIdx
 let winner
 let score
 
@@ -75,7 +75,6 @@ const answerButtons = document.getElementById("answerButtons")
 
 const powerToolsBtn = document.getElementById("powerToolBtn")
 
-
 const handToolsBtn = document.getElementById("handToolBtn")
 
 const specialityToolsBtn = document.getElementById("specialityToolBtn")
@@ -126,6 +125,9 @@ function init () {
 }
 
 function findAnswer (){
+    // answerOptions.array[]
+    // access the questionObject of current questions with the questionObjectIdx access answers array with the answer idx number from object 
+    // currentquestions.idx answer.array[]
     // search through question answer array to true/false if selected button is correct answer after answerButtons is clicked
 }
 
@@ -141,6 +143,7 @@ function handleCategory (e){
 function getRandomQuestion(){
     const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
     renderQuestion(currentQuestions[idx])
+    questionObjectIdx = idx
 }
 
 function renderQuestion (q){
@@ -163,61 +166,61 @@ let pToolQuestions = [
     {question: "What Power Tool is this?",
     img:"https://imgbox.com/g8Ep78F8",
     id: "BandSaw",
-    answer: "Band Saw",
+    answer: [3],
     answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Band Saw"]},
 
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/zf5U4MGc",
     id: "CircularSaw",
-    answer: "Circular Saw",
+    answer: [1],
     answerOptions: ["Saw", "Circular Saw", "Band Saw", "Saw Zall"]},
 
     {question: "What Power Tool is this?",
     img:"https://imgbox.com/dpSdsN09",
     id: "Grinder",
-    answer: "Grinder",
+    answer: [0],
     answerOptions: ["Grinder", "Circular Saw", "Band Saw", "Hack Saw"]},
 
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/hoo7FEkn",
     id: "ConcreteSaw",
-    answer: "Concrete Saw",
+    answer: [2],
     answerOptions: ["Round Saw", "Jack Hammer", "Concrete Saw", "Circular Saw"]},
 
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/rS10g8DP",
     id: "HammerDrill",
-    answer: "Hammer Drill",
+    answer: [3],
     answerOptions: ["Impact Drill", "Jack Hammer", "Concrete Saw", "Hammer Drill"]},
 
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/ROQeT71S",
     id: "ImpactDrill",
-    answer: "Impact Drill",
+    answer: [3],
     answerOptions: ["Impact Driver", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
     
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/IlOtrHHU",
     id: "ImpactDriver",
-    answer: "Impact Driver",
+    answer: [0],
     answerOptions: ["Impact Driver", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
     
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/QiRYIrLM",
     id: "JackHammer",
-    answer: "Jack Hammer",
+    answer: [1],
     answerOptions: ["Impact Driver", "Jack Hammer", "Hammer Drill", "SawZall"]},
     
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/hZg1OZMg",
     id: "MiterSaw",
-    answer: "Miter Saw",
+    answer: [3],
     answerOptions: ["Circular Saw", "Jack Hammer", "Radial Arm Saw", "Miter Saw"]},
 
     {question: "What Power Tool is this?",
     img: "https://imgbox.com/A0j2G3cO",
     id: "SawZall",
-    answer: "SawZall",
+    answer: [0],
     answerOptions: ["SawZall", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
 ]
 console.log (pToolQuestions)
