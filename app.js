@@ -65,7 +65,7 @@ const nextBtn = document.querySelector("next")
 
 const powerToolsBtn = document.getElementById("powerToolBtn")
 
-
+const answerButtons = document.getElementById("answerButtons")
 
 const handToolsBtn = document.getElementById("handToolBtn")
 
@@ -93,15 +93,14 @@ powerToolsBtn.addEventListener('click', handleCategory)
 
 handToolsBtn.addEventListener('click', handleCategory)
 
-specialityToolsBtn.addEventListener('click',() => {
-    specialToolSound.volume = .10
-    specialToolSound.play()
-})
+specialityToolsBtn.addEventListener('click', handleCategory)
 
-equipmentBtn.addEventListener('click', () => {
-    equipSound.volume = .10
-    equipSound.play()
-})
+
+equipmentBtn.addEventListener('click', handleCategory)
+    
+
+answerButtons.addEventListener("click", findAnswer)
+
 
 // nextBtn.addEventListener('click',() => {
 
@@ -111,7 +110,6 @@ equipmentBtn.addEventListener('click', () => {
 //     init ()
 // })
 
-console.log("hello")
 
 /*----------- Functions -------------------*/
 function init () {
@@ -119,6 +117,10 @@ function init () {
     // render ()
     console.log("hello")
     // buttons(powerToolBtn)
+}
+
+function findAnswer (){
+    // search through question answer array to true/false if selected button is correct answer
 }
 
 
