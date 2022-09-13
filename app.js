@@ -105,9 +105,13 @@ equipmentBtn.addEventListener('click', () => {
     equipSound.play()
 })
 
-nextBtn.addEventListener('click', next)
+// nextBtn.addEventListener('click',() => {
 
-restartBtn.addEventListener('click', init)
+// })
+
+// restartBtn.addEventListener('click', () =>{
+//     init ()
+// })
 
 console.log("hello")
 
