@@ -125,9 +125,13 @@ function init () {
 }
 
 function findAnswer (){
+    let answerIdx = currentQuestions[questionObjectIdx][answer]
+    let correctAnswer = currentQuestions[questionObjectIdx][answerOptions][answerIdx]
+    
     // answerOptions.array[]
     // access the questionObject of current questions with the questionObjectIdx access answers array with the answer idx number from object 
     // currentquestions.idx answer.array[]
+    
     // search through question answer array to true/false if selected button is correct answer after answerButtons is clicked
 }
 
