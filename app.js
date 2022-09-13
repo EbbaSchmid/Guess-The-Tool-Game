@@ -53,15 +53,24 @@ let equipSound = new Audio("../assets/excavator-working.mp3")
 
 
 /*------- Cached Element References ------------------*/
+
+// Other Buttons Below .........................
 const countdownEl = document.getElementById('countdown')
 
 const restartBtn = document.querySelector("restart")
 
+const nextBtn = document.querySelector("next")
+
+
+
+// Rotating Game Areas .................
+const questionPhoto = document.getElementById("questionPhoto")
 
 const questionList = document.getElementById("questionList")
 
-const nextBtn = document.querySelector("next")
 
+
+// Main Category Buttons Below ...............
 
 const powerToolsBtn = document.getElementById("powerToolBtn")
 
@@ -69,9 +78,7 @@ const answerButtons = document.getElementById("answerButtons")
 
 const handToolsBtn = document.getElementById("handToolBtn")
 
-
 const specialityToolsBtn = document.getElementById("specialityToolBtn")
-
 
 const equipmentBtn = document.getElementById("equipBtn")
 
