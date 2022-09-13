@@ -1,5 +1,4 @@
 /*---------------- Constants ----------------*/
-let currentQuestion = 0
 
 
 
@@ -10,6 +9,7 @@ let currentQuestion = 0
 
 /*----------------- Variables (state) ---------------*/
 
+let currentQuestions 
 
 
 let winner
@@ -57,22 +57,25 @@ let equipSound = new Audio("../assets/excavator-working.mp3")
 const countdownEl = document.getElementById('countdown')
 
 const restartBtn = document.querySelector("restart")
-console.log ("restart")
+
+
+const questionList = document.getElementById("questionList")
 
 const nextBtn = document.querySelector("next")
-console.log ("Next")
+
 
 const powerToolsBtn = document.getElementById("powerToolBtn")
-console.log ("pToolQuestions")
+
+
 
 const handToolsBtn = document.getElementById("handToolBtn")
-console.log ("hToolQuestions")
+
 
 const specialityToolsBtn = document.getElementById("specialityToolBtn")
-console.log ("sToolQuestions")
+
 
 const equipmentBtn = document.getElementById("equipBtn")
-console.log ("equipQuestions")
+
 
 // const powerToolQuestions = document.querySelector("")
 
@@ -86,9 +89,8 @@ console.log ("equipQuestions")
 init()
 // create an array of categories, the object 
 
-powerToolsBtn.addEventListener('click', () => {
-    powerToolSound.play()
-})
+powerToolsBtn.addEventListener('click', handleCategory)
+
 
 handToolsBtn.addEventListener('click', () => {
     handToolSound.volume = .10
@@ -116,10 +118,32 @@ equipmentBtn.addEventListener('click', () => {
 console.log("hello")
 
 /*----------- Functions -------------------*/
+function init () {
+    // let questions = pToolQuestions
+    // winner = null
+    // render ()
+    console.log("hello")
+    // buttons(powerToolBtn)
+}
 
+function handleCategory (e){
+    console.log(e.target.id)
+    console.log(categories[e.target.id].questions)
+    currentQuestions = categories[e.target.id].questions
+    console.log(currentQuestions)
+    getRandomQuestion()
+}
 
+function getRandomQuestion(){
+    const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
+    renderQuestion(currentQuestions[idx])
+}
 
-
+function renderQuestion (q){
+    const question = document.createElement("p")
+    question.textContent = q.question
+    questionList.appendChild(question)
+}
 
 // function handleCategoryClick(audio, element){
 // element.addEventListener('click', function(evt){
@@ -128,7 +152,7 @@ console.log("hello")
 // })
 // }
 
-
+// remove data to assets data file
 let pToolQuestions = [
     {question: "What Power Tool is this?",
     img:"https://imgbox.com/g8Ep78F8",
@@ -192,12 +216,25 @@ let pToolQuestions = [
 ]
 console.log (pToolQuestions)
 
-let powerToolBtn = {
-    audio: "powerToolSound",
-    id: "powerToolBtn", 
-    text: "Power Tools",
-    questions: pToolQuestions,
+
+const categories = { 
+    powerToolBtn: {
+        audio: "powerToolSound",
+        id: "powerToolBtn", 
+        text: "Power Tools",
+        questions: pToolQuestions,
+    }
 }
+
+
+// function powerToolBtn (toolCategory) {
+//         const categoryButtons = document.getElementById("categoryButtons")
+//         const categoryButton = document.createElement("button")
+//         categoryButton.setAttribute("id", toolCategory.id)
+//         categoryButton.appendChild(document.createTextNode(toolCategory.text))
+//         categoryButtons.appendChild(categoryButton)
+//         handleCategoryClick(toolCategory.audio, categoryButton)
+// }
 
 
 // let hToolQuestions = [
@@ -439,13 +476,7 @@ let powerToolBtn = {
 
 
 
-function init () {
-    // let questions = pToolQuestions
-    // winner = null
-    // render ()
-    console.log("hello")
-    // buttons(powerToolBtn)
-}
+
 
 
 
