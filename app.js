@@ -1,6 +1,6 @@
 /*---------------- Constants ----------------*/
 let currentQuestion = 0
-let powerToolsAudio = new Audio ()
+// let powerToolsAudio = new Audio ()
 
 
 
@@ -32,21 +32,26 @@ console.log ("restart")
 const nextBtn = document.querySelector("next")
 console.log ("Next")
 
-const powerToolsBtn = document.querySelector("pToolQuestions")
-console.log ("pToolQuestions")
 
-const handToolsBtn = document.querySelector("hToolQuestions")
-console.log ("hToolQuestions")
 
-const specialityToolsBtn = document.querySelector("sToolQuestions")
-console.log ("sToolQuestions")
 
-const equipmentBtn = document.querySelector("equipQuestions")
-console.log ("equipQuestions")
+// const powerToolsBtn = document.getElementById("pToolQuestions")
+// console.log ("pToolQuestions")
+
+// const handToolsBtn = document.getElementById("hToolQuestions")
+// console.log ("hToolQuestions")
+
+// const specialityToolsBtn = document.getElementById("sToolQuestions")
+// console.log ("sToolQuestions")
+
+// const equipmentBtn = document.getElementById("equipQuestions")
+// console.log ("equipQuestions")
 
 // const powerToolQuestions = document.querySelector("")
 
-
+// var tag_id = document.getElementById('tagid');
+// var newNode = document.createElement('p');
+// newNode.appendChild(document.createTextNode('html string'));
 
 
 /*-------------- Event Listeners --------------------*/
@@ -77,9 +82,29 @@ equipBtn.addEventListener('click', function(evt){
 init()
 
 function init () {
-    let questions = pToolQuestions
-    winner = null
-    render ()
+    // let questions = pToolQuestions
+    // winner = null
+    // render ()
+    console.log("hello")
+    buttons()
+}
+
+let powerToolBtn = {
+    audio: powerToolSound,
+    id: powerToolBtn, 
+    text: "Power Tools",
+    questions: pToolQuestions,
+}
+
+
+
+function buttons() {
+    const categoryButtons = document.getElementById("categoryButtons")
+    const powerToolBtn = document.createElement("button")
+    powerToolBtn.setAttribute("id", "powerToolBtn")
+    powerToolBtn.appendChild(document.createTextNode("power tools"))
+    categoryButtons.appendChild(powerToolBtn)
+}
 
 
 function Click(evt) {
@@ -89,19 +114,21 @@ function Click(evt) {
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",
+    img:"",
     answer: "Make into string",
     answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Saw Zall"]},
 
+
     {question: "What Power Tool is this?",
-    answer: 1,
+    answer: "Make into string",
     answerOptions: ["Drill", "Hammer Drill", "Saw Zall", "Big Drill"]},
 
     {question: "What Power Tool is this?",
-    answer: 2,
+    answer: "Make into string",
     answerOptions: ["Saw", "Circular Saw", "Band Saw", "Hack Saw"]},
 
     {question: "What Power Tool is this?",
-    answer: 3,
+    answer: "Make into string",
     answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"]},
 ]
 console.log (pToolQuestions)
@@ -119,9 +146,3 @@ console.log (pToolQuestions)
 // 				confetti.start(500)
 //     }
 // }, 1000)
-
-
-
-
-
-}
