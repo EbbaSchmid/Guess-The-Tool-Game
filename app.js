@@ -3,9 +3,6 @@
 
 
 
-// hToolQuestions
-// sToolQuestions
-// equipQuestions
 
 /*----------------- Variables (state) ---------------*/
 
@@ -23,33 +20,6 @@ let specialToolSound = new Audio("../assets/flame-ignition.mp3")
 let equipSound = new Audio("../assets/excavator-working.mp3")
 
 
-// let powerToolBtn = {
-//     audio: "powerToolSound",
-//     id: "powerToolBtn", 
-//     text: "Power Tools",
-//     questions: pToolQuestions,
-// }
-
-// let handToolBtn = {
-//     audio: handToolSound,
-//     id: "handToolBtn", 
-//     text: "Hand Tools",
-//     questions: hToolQuestions,
-// }
-
-// let specialityToolBtn = {
-//     audio: specialToolSound,
-//     id: "specialityToolBtn", 
-//     text: "Speciality Tools",
-//     questions: sToolQuestions,
-// }
-
-// let equipBtn = {
-//     audio: equipSound,
-//     id: "equipBtn", 
-//     text: "Equipment",
-//     questions: equipQuestions,
-// }
 
 
 /*------- Cached Element References ------------------*/
@@ -91,9 +61,7 @@ const equipmentBtn = document.getElementById("equipBtn")
 
 // const powerToolQuestions = document.querySelector("")
 
-// var tag_id = document.getElementById('tagid');
-// var newNode = document.createElement('p');
-// newNode.appendChild(document.createTextNode('html string'));
+
 
 
 /*-------------- Event Listeners --------------------*/
@@ -152,13 +120,9 @@ function findAnswer (){
     // search through question answer array to true/false if selected button is correct answer after answerButtons is clicked
 
 
-
-
-
-
 function handleCategory (e){
     console.log(e.target.id)
-    console.log(categories[e.target.id].questions)
+    // console.log(categories[e.target.id].questions)
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getRandomQuestion()
@@ -175,13 +139,6 @@ function renderQuestion (q){
     question.textContent = q.question
     questionList.appendChild(question)
 }
-
-// function handleCategoryClick(audio, element){
-// element.addEventListener('click', function(evt){
-//     // audio.volume = .10
-//     audio.play()
-// })
-// }
 
 
 
@@ -248,6 +205,9 @@ let pToolQuestions = [
     answerOptions: ["SawZall", "Jack Hammer", "Hammer Drill", "Impact Drill"]},
 ]
 console.log (pToolQuestions)
+
+
+
 
 let categories = { 
     powerToolBtn: {
