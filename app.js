@@ -55,9 +55,9 @@ console.log ("equipQuestions")
 
 // create an array of categories, the object 
 
-// powerToolBtn.addEventListener('click', function(evt){
-//     powerToolSound.play()
-// })
+powerToolBtn.addEventListener('click', function(evt){
+    powerToolSound.play()
+})
 
 // handToolBtn.addEventListener('click', () => {
 //     handToolSound.volume = .10
@@ -160,231 +160,231 @@ console.log (pToolQuestions)
 
 
 
-let hToolQuestions = [
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/oKdflYoX",
-    id: "ChalkReel",
-    answer: 
-    answerOptions: [
-    ]},
+// let hToolQuestions = [
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/oKdflYoX",
+//     id: "ChalkReel",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/y9MLhtk1",
-    id: "CatsPaw",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/y9MLhtk1",
+//     id: "CatsPaw",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/VshJl3Ys",
-    id: "WireStrippers",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/VshJl3Ys",
+//     id: "WireStrippers",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/9MEU2qnO",
-    id: "SideCutters",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/9MEU2qnO",
+//     id: "SideCutters",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/C3VVUSTn",
-    id: "PipeWrench",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/C3VVUSTn",
+//     id: "PipeWrench",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/DAeVfkdG",
-    id: "FramingSquare",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/DAeVfkdG",
+//     id: "FramingSquare",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/zudIQS1K",
-    id: "Cclamp",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/zudIQS1K",
+//     id: "Cclamp",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/vXHgHXQZ",
-    id: "ChannelLocks",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/vXHgHXQZ",
+//     id: "ChannelLocks",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/xwVM6c4X",
-    id: "HexKeys",
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/xwVM6c4X",
+//     id: "HexKeys",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/r2Q8RULs",
-    id: "BallPeenHammer",
-    answer: 
-    answerOptions: [
-    ]},
-]
+//     {question: "What Hand Tool is this?",
+//     img: "https://imgbox.com/r2Q8RULs",
+//     id: "BallPeenHammer",
+//     answer: 
+//     answerOptions: [
+//     ]},
+// ]
 
-console.log(hToolQuestions)
-
-
-
-let sToolQuestions = [
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-
-    {question: "What Speciality Tool is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
-]
-
-console.log(sToolQuestions)
+// console.log(hToolQuestions)
 
 
 
-let equipQuestions = [
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+// let sToolQuestions = [
+//     {question: "What Speciality Tool is this?",
+//     img: "https://imgbox.com/ZMNN70r5",
+//     id: "BrickJointer",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: "https://imgbox.com/HjO3qgcz",
+//     id: "AviationSnips",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: "https://imgbox.com/CQzQEcO9",
+//     id: "TubeCutter",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: "https://imgbox.com/h3kFEmgg",
+//     id: "Striker",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: "https://imgbox.com/QwULHr85",
+//     id: "FeelerGuage",
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
 
-    {question: "What Equipment is this?",
-    img: 
-    id: 
-    answer: 
-    answerOptions: [
-    ]},
+//     {question: "What Speciality Tool is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+// ]
 
-]
-console.log (equipQuestions)
+// console.log(sToolQuestions)
+
+
+
+// let equipQuestions = [
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+//     {question: "What Equipment is this?",
+//     img: 
+//     id: 
+//     answer: 
+//     answerOptions: [
+//     ]},
+
+// ]
+// console.log (equipQuestions)
 
 
 
