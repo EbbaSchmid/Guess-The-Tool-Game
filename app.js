@@ -263,12 +263,11 @@ let hToolQuestions = [
     answer: [3],
     answerOptions: ["Pliers", "Wire Strippers", "Channel Locks", "Side Cutters"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/C3VVUSTn",
-//     id: "PipeWrench",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/C3VVUSTn",
+    id: "PipeWrench",
+    answer: [1],
+    answerOptions: ["Socket", "Pipe Wrench", "Crescent Wrench", "Adjectable Wrench"]},
 
 //     {question: "What Hand Tool is this?",
 //     img: "https://imgbox.com/DAeVfkdG",
