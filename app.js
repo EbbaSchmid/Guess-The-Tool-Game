@@ -56,9 +56,11 @@ console.log ("Next")
 
 /*-------------- Event Listeners --------------------*/
 
-powerToolBtn.addEventListener('click', function(evt){
-    powerToolSound.play()
-})
+// create an array of categories, the object 
+
+// powerToolBtn.addEventListener('click', function(evt){
+//     powerToolSound.play()
+// })
 
 handToolBtn.addEventListener('click', function(evt){
     handToolSound.play()
@@ -79,38 +81,13 @@ equipBtn.addEventListener('click', function(evt){
 // console.log("hello")
 
 /*----------- Functions -------------------*/
-init()
 
-function init () {
-    // let questions = pToolQuestions
-    // winner = null
-    // render ()
-    console.log("hello")
-    buttons()
+function handleCategoryClick(audio, element){
+element.addEventListener('click', function(evt){
+    audio.play()
+})
 }
 
-let powerToolBtn = {
-    audio: powerToolSound,
-    id: powerToolBtn, 
-    text: "Power Tools",
-    questions: pToolQuestions,
-}
-
-
-
-function buttons() {
-    const categoryButtons = document.getElementById("categoryButtons")
-    const powerToolBtn = document.createElement("button")
-    powerToolBtn.setAttribute("id", "powerToolBtn")
-    powerToolBtn.appendChild(document.createTextNode("power tools"))
-    categoryButtons.appendChild(powerToolBtn)
-}
-
-
-function Click(evt) {
-    let pToolQuestions = parseInt(evt.target.pToolQuestions)
-    console.log(pToolQuestions)
-}
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",
@@ -131,7 +108,48 @@ let pToolQuestions = [
     answer: "Make into string",
     answerOptions: ["Round Saw", "Jack Hammer", "Hack Saw", "Circular Saw"]},
 ]
-console.log (pToolQuestions)
+
+
+let powerToolBtn = {
+    audio: powerToolSound,
+    id: "powerToolBtn", 
+    text: "Power Tools",
+    questions: pToolQuestions,
+}
+// repeat each button as above, as one var array
+
+
+function buttons(toolCategory) {
+    const categoryButtons = document.getElementById("categoryButtons")
+    const categoryButton = document.createElement("button")
+    categoryButton.setAttribute("id", toolCategory.id)
+    categoryButton.appendChild(document.createTextNode(toolCategory.text))
+    categoryButtons.appendChild(categoryButton)
+    handleCategoryClick(toolCategory.audio, categoryButton)
+}
+
+
+
+function init () {
+    // let questions = pToolQuestions
+    // winner = null
+    // render ()
+    console.log("hello")
+    buttons(powerToolBtn)
+}
+
+init()
+
+
+
+
+// function Click(evt) {
+//     let pToolQuestions = parseInt(evt.target.pToolQuestions)
+//     console.log(pToolQuestions)
+// }
+
+
+
 
 
 
