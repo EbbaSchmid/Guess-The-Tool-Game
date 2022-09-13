@@ -162,21 +162,21 @@ console.log (pToolQuestions)
 
 let hToolQuestions = [
     {question: "What Hand Tool is this?",
-    img: 
-    id: 
+    img: "https://imgbox.com/oKdflYoX",
+    id: "ChalkReel",
     answer: 
     answerOptions: [
     ]},
 
     {question: "What Hand Tool is this?",
-    img: 
-    id: 
+    img: "https://imgbox.com/y9MLhtk1",
+    id: "CatsPaw",
     answer: 
     answerOptions: [
     ]},
 
     {question: "What Hand Tool is this?",
-    img: 
+    img: "https://imgbox.com/VshJl3Ys",
     id: 
     answer: 
     answerOptions: [
