@@ -269,40 +269,35 @@ let hToolQuestions = [
     answer: [1],
     answerOptions: ["Socket", "Pipe Wrench", "Crescent Wrench", "Adjectable Wrench"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/DAeVfkdG",
-//     id: "FramingSquare",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/DAeVfkdG",
+    id: "FramingSquare",
+    answer: [2],
+    answerOptions: ["Cabinet Square", "Speed Square", "Framing Square", "Mason Level"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/zudIQS1K",
-//     id: "Cclamp",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/zudIQS1K",
+    id: "Cclamp",
+    answer: [0],
+    answerOptions: ["C-Clamp", "D-Clamp", "Tube Cutter", "C-Toggle"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/vXHgHXQZ",
-//     id: "ChannelLocks",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/vXHgHXQZ",
+    id: "ChannelLocks",
+    answer: [1],
+    answerOptions: ["Pliers", "Channel Locks", "Adjustable Wrench", "Pipe Wrench"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/xwVM6c4X",
-//     id: "HexKeys",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/xwVM6c4X",
+    id: "HexKeys",
+    answer: [2],
+    answerOptions: ["Tom Keys", "L Keys", "Hex Keys", "Octo Keys"]},
 
-//     {question: "What Hand Tool is this?",
-//     img: "https://imgbox.com/r2Q8RULs",
-//     id: "BallPeenHammer",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Hand Tool is this?",
+    img: "https://imgbox.com/r2Q8RULs",
+    id: "BallPeenHammer",
+    answer: [3],
+    answerOptions: ["Hammer", "Sledge Hammer", "Mallet", "Ball Peen Hammer"]},
 ]
 
 // console.log(hToolQuestions)
