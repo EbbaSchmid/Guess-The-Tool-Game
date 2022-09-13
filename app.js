@@ -94,31 +94,30 @@ const equipmentBtn = document.getElementById("equipBtn")
 
 init()
 
-
+// Main Category Buttons Below ...............
 powerToolsBtn.addEventListener('click', handleCategory)
-
 
 handToolsBtn.addEventListener('click', handleCategory)
 
 specialityToolsBtn.addEventListener('click', handleCategory)
 
-
 equipmentBtn.addEventListener('click', handleCategory)
-    
 
+
+// Rotating Game Areas .................
 answerButtons.addEventListener("click", findAnswer)
 
 
-// nextBtn.addEventListener('click',() => {
 
-// })
+// Other Buttons Below .........................
+// nextBtn.addEventListener('click',() => {})
 
 // restartBtn.addEventListener('click', () =>{
-//     init ()
-// })
+//     init () })
 
 
 /*----------- Functions -------------------*/
+
 function init () {
     // winner = null
     // render ()
