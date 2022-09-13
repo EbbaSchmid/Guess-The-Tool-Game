@@ -68,13 +68,13 @@ const questionPhoto = document.getElementById("questionPhoto")
 
 const questionList = document.getElementById("questionList")
 
+const answerButtons = document.getElementById("answerButtons")
 
 
 // Main Category Buttons Below ...............
 
 const powerToolsBtn = document.getElementById("powerToolBtn")
 
-const answerButtons = document.getElementById("answerButtons")
 
 const handToolsBtn = document.getElementById("handToolBtn")
 
@@ -126,7 +126,7 @@ function init () {
 }
 
 function findAnswer (){
-    // search through question answer array to true/false if selected button is correct answer
+    // search through question answer array to true/false if selected button is correct answer after answerButtons is clicked
 }
 
 
