@@ -58,30 +58,20 @@ const countdownEl = document.getElementById('countdown')
 
 const restartBtn = document.querySelector("restart")
 
-
 const questionList = document.getElementById("questionList")
+
+const questionPhoto = document.getElementById("questionPhoto")
 
 const nextBtn = document.querySelector("next")
 
-
 const powerToolsBtn = document.getElementById("powerToolBtn")
-
-
 
 const handToolsBtn = document.getElementById("handToolBtn")
 
-
 const specialityToolsBtn = document.getElementById("specialityToolBtn")
-
 
 const equipmentBtn = document.getElementById("equipBtn")
 
-
-// const powerToolQuestions = document.querySelector("")
-
-// var tag_id = document.getElementById('tagid');
-// var newNode = document.createElement('p');
-// newNode.appendChild(document.createTextNode('html string'));
 
 
 /*-------------- Event Listeners --------------------*/
@@ -119,11 +109,8 @@ console.log("hello")
 
 /*----------- Functions -------------------*/
 function init () {
-    // let questions = pToolQuestions
-    // winner = null
-    // render ()
     console.log("hello")
-    // buttons(powerToolBtn)
+
 }
 
 function handleCategory (e){
