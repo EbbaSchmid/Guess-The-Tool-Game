@@ -32,20 +32,17 @@ console.log ("restart")
 const nextBtn = document.querySelector("next")
 console.log ("Next")
 
+const powerToolsBtn = document.getElementById("pToolQuestions")
+console.log ("pToolQuestions")
 
+const handToolsBtn = document.getElementById("hToolQuestions")
+console.log ("hToolQuestions")
 
+const specialityToolsBtn = document.getElementById("sToolQuestions")
+console.log ("sToolQuestions")
 
-// const powerToolsBtn = document.getElementById("pToolQuestions")
-// console.log ("pToolQuestions")
-
-// const handToolsBtn = document.getElementById("hToolQuestions")
-// console.log ("hToolQuestions")
-
-// const specialityToolsBtn = document.getElementById("sToolQuestions")
-// console.log ("sToolQuestions")
-
-// const equipmentBtn = document.getElementById("equipQuestions")
-// console.log ("equipQuestions")
+const equipmentBtn = document.getElementById("equipQuestions")
+console.log ("equipQuestions")
 
 // const powerToolQuestions = document.querySelector("")
 
@@ -62,17 +59,20 @@ console.log ("Next")
 //     powerToolSound.play()
 // })
 
-handToolBtn.addEventListener('click', function(evt){
-    handToolSound.play()
-})
+// handToolBtn.addEventListener('click', () => {
+//     handToolSound.volume = .10
+//     handToolSound.play()
+// })
 
-specialityToolBtn.addEventListener('click', function(evt){
-    specialToolSound.play()
-})
+// specialityToolBtn.addEventListener('click',() => {
+//     specialToolSound.volume = .10
+//     specialToolSound.play()
+// })
 
-equipBtn.addEventListener('click', function(evt){
-    equipSound.play()
-})
+// equipBtn.addEventListener('click', () => {
+//     equipSound.volume = .10
+//     equipSound.play()
+// })
 
 // nextBtn.addEventListener('click', next)
 
@@ -82,8 +82,13 @@ equipBtn.addEventListener('click', function(evt){
 
 /*----------- Functions -------------------*/
 
+init()
+
+
+
 function handleCategoryClick(audio, element){
 element.addEventListener('click', function(evt){
+    audio.volume = .10
     audio.play()
 })
 }
@@ -121,7 +126,21 @@ let handToolBtn = {
     audio: handToolSound,
     id: "handToolBtn", 
     text: "Hand Tools",
-    questions: pToolQuestions,
+    questions: hToolQuestions,
+}
+
+let specialityToolBtn = {
+    audio: specialToolSound,
+    id: "specialityToolBtn", 
+    text: "Speciality Tools",
+    questions: sToolQuestions,
+}
+
+let equipBtn = {
+    audio: equipSound,
+    id: "equipBtn", 
+    text: "Equipment",
+    questions: equipQuestions,
 }
 
 
@@ -141,10 +160,10 @@ function init () {
     // winner = null
     // render ()
     console.log("hello")
-    buttons(powerToolBtn)
+    buttons(categoryButton)
 }
 
-init()
+
 
 
 
