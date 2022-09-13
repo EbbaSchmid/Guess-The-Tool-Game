@@ -58,26 +58,36 @@ const countdownEl = document.getElementById('countdown')
 
 const restartBtn = document.querySelector("restart")
 
-const questionList = document.getElementById("questionList")
 
-const questionPhoto = document.getElementById("questionPhoto")
+const questionList = document.getElementById("questionList")
 
 const nextBtn = document.querySelector("next")
 
+
 const powerToolsBtn = document.getElementById("powerToolBtn")
+
+
 
 const handToolsBtn = document.getElementById("handToolBtn")
 
+
 const specialityToolsBtn = document.getElementById("specialityToolBtn")
+
 
 const equipmentBtn = document.getElementById("equipBtn")
 
+
+// const powerToolQuestions = document.querySelector("")
+
+// var tag_id = document.getElementById('tagid');
+// var newNode = document.createElement('p');
+// newNode.appendChild(document.createTextNode('html string'));
 
 
 /*-------------- Event Listeners --------------------*/
 
 init()
-// create an array of categories, the object 
+
 
 powerToolsBtn.addEventListener('click', handleCategory)
 
@@ -109,8 +119,11 @@ console.log("hello")
 
 /*----------- Functions -------------------*/
 function init () {
+    // let questions = pToolQuestions
+    // winner = null
+    // render ()
     console.log("hello")
-
+    // buttons(powerToolBtn)
 }
 
 function handleCategory (e){
@@ -210,6 +223,12 @@ const categories = {
         id: "powerToolBtn", 
         text: "Power Tools",
         questions: pToolQuestions,
+    },
+    handToolBtn: {
+        audio: "handToolSound",
+        id: "handToolBtn", 
+        text: "Hand Tools",
+        questions: hToolQuestions,
     }
 }
 
@@ -450,44 +469,3 @@ const categories = {
 // ]
 // console.log (equipQuestions)
 
-
-
-// function buttons(toolCategory) {
-//     const categoryButtons = document.getElementById("categoryButtons")
-//     const categoryButton = document.createElement("button")
-//     categoryButton.setAttribute("id", toolCategory.id)
-//     categoryButton.appendChild(document.createTextNode(toolCategory.text))
-//     categoryButtons.appendChild(categoryButton)
-//     handleCategoryClick(toolCategory.audio, categoryButton)
-// }
-
-
-
-
-
-
-
-
-
-
-// function Click(evt) {
-//     let pToolQuestions = parseInt(evt.target.pToolQuestions)
-//     console.log(pToolQuestions)
-// }
-
-
-
-
-
-
-
-// let timeLeft = 10;
-
-// let timer = setInterval(function() {
-//     countdownEl.textContent = timeLeft + ' seconds remaining.';
-//     timeLeft -= 1;
-//     if (timeLeft < 0) {
-//         countdownEl.textContent = 'Finished!'
-// 				confetti.start(500)
-//     }
-// }, 1000)
