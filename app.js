@@ -226,22 +226,21 @@ let categories = {
         id: "handToolBtn", 
         text: "Hand Tools",
         // questions: hToolQuestions,
+    },
+    specialityToolBtn: {
+        audio: "specialToolSound",
+        id: "specialToolBtn", 
+        text: "Speciality Tools",
+        // questions: sToolQuestions,
+    },
+    equipBtn: {
+        audio: "equipSound",
+        id: "equipBtn", 
+        text: "Equipment",
+        // questions: equipQuestions,
     }
 }
 
-
-
-
-
-
-// function powerToolBtn (toolCategory) {
-//         const categoryButtons = document.getElementById("categoryButtons")
-//         const categoryButton = document.createElement("button")
-//         categoryButton.setAttribute("id", toolCategory.id)
-//         categoryButton.appendChild(document.createTextNode(toolCategory.text))
-//         categoryButtons.appendChild(categoryButton)
-//         handleCategoryClick(toolCategory.audio, categoryButton)
-// }
 
 
 let hToolQuestions = [
