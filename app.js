@@ -142,7 +142,6 @@ function renderQuestion (q){
 
 
 
-// remove data to assets data file
 let pToolQuestions = [
     {question: "What Power Tool is this?",
     img:"https://imgbox.com/g8Ep78F8",
@@ -208,36 +207,6 @@ console.log (pToolQuestions)
 
 
 
-
-let categories = { 
-    powerToolBtn: {
-        audio: "powerToolSound",
-        id: "powerToolBtn", 
-        text: "Power Tools",
-        questions: pToolQuestions,
-    },
-    handToolBtn: {
-        audio: "handToolSound",
-        id: "handToolBtn", 
-        text: "Hand Tools",
-        // questions: hToolQuestions,
-    },
-    specialityToolBtn: {
-        audio: "specialToolSound",
-        id: "specialToolBtn", 
-        text: "Speciality Tools",
-        // questions: sToolQuestions,
-    },
-    equipBtn: {
-        audio: "equipSound",
-        id: "equipBtn", 
-        text: "Equipment",
-        // questions: equipQuestions,
-    }
-}
-
-
-
 let hToolQuestions = [
     {question: "What Hand Tool is this?",
     img: "https://imgbox.com/oKdflYoX",
@@ -300,7 +269,7 @@ let hToolQuestions = [
     answerOptions: ["Hammer", "Sledge Hammer", "Mallet", "Ball Peen Hammer"]},
 ]
 
-// console.log(hToolQuestions)
+console.log(hToolQuestions)
 
 
 
@@ -454,3 +423,29 @@ let hToolQuestions = [
 // ]
 // console.log (equipQuestions)
 
+let categories = { 
+    powerToolBtn: {
+        audio: "powerToolSound",
+        id: "powerToolBtn", 
+        text: "Power Tools",
+        questions: pToolQuestions,
+    },
+    handToolBtn: {
+        audio: "handToolSound",
+        id: "handToolBtn", 
+        text: "Hand Tools",
+        questions: hToolQuestions,
+    },
+    specialityToolBtn: {
+        audio: "specialToolSound",
+        id: "specialToolBtn", 
+        text: "Speciality Tools",
+        // questions: sToolQuestions,
+    },
+    equipBtn: {
+        audio: "equipSound",
+        id: "equipBtn", 
+        text: "Equipment",
+        // questions: equipQuestions,
+    }
+}
