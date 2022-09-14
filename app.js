@@ -108,9 +108,6 @@ function handleCategory (e){
     console.log(currentQuestions)
     getQuestion()
     // Need to add audio sound to category button click
-    // Need to display correct image from categories array of objects
-    // currentPhoto = categories[e.target.id].img
-    // getRandomPhoto()
 }
 
 
@@ -155,7 +152,7 @@ function handleAnswer (e){
     console.log (e.target.id)
     if (answer == e.target.id) {
         score += 1
-        scoreText.textContent = score
+        scoreText.textContent = score 
         console.log ("correct")
     } else {
         score -= 1
