@@ -10,6 +10,7 @@ let winner
 let score
 let answer
 
+
 let powerToolSound = new Audio("../assets/drill.mp3")
 
 let handToolSound = new Audio("../assets/hammering.mp3")
@@ -28,7 +29,7 @@ const countdownEl = document.getElementById('countdown')
 
 const restartBtn = document.querySelector("restart")
 
-const nextBtn = document.querySelector("next")
+const nextBtn = document.querySelector("#nextBtn")
 
 
 
@@ -80,7 +81,7 @@ equipmentBtn.addEventListener('click', handleCategory)
 
 
 // Other Buttons Below .........................
-// nextBtn.addEventListener('click',() => {})
+nextBtn.addEventListener('click', getQuestion)
 
 // restartBtn.addEventListener('click', () =>{
 //     init () })
@@ -92,6 +93,8 @@ function init () {
     // winner = null
     // render ()
     console.log("hello")
+    questionObjectIdx = -1
+    
     // buttons(powerToolBtn)
 }
 
@@ -101,7 +104,7 @@ function handleCategory (e){
     // console.log(categories[e.target.id].questions)
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
-    getRandomQuestion()
+    getQuestion()
     // Need to add audio sound to category button click
     // Need to display correct image from categories array of objects
     // currentPhoto = categories[e.target.id].img
@@ -109,23 +112,35 @@ function handleCategory (e){
 }
 
 
-function getRandomQuestion(){
-    const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
-    renderQuestion(currentQuestions[idx])
-    questionObjectIdx = idx    
-    answer = currentQuestions[idx].answer
+function getQuestion(){
+    questionObjectIdx++    
+    if (currentQuestions[questionObjectIdx]){
+        renderQuestion(currentQuestions[questionObjectIdx]) 
+        answer = currentQuestions[questionObjectIdx].answer
+    } else {
+        console.log("game over")
+        // can build out more for when the game is done
+    }
+    
+
 }
 
 function renderQuestion (q){
+    questionList.innerHTML = ""
     const question = document.createElement("p")
     question.textContent = q.question
     questionList.appendChild(question)
     renderOptions(q)
+    renderPhoto(q)
 
     // added in similar structure for imgs
     // const toolPhoto = document.createElement("img")
     // toolPhoto.textContent = photo.img
     // gameSelection.appendChild(img)
+}
+
+function renderPhoto (q) {
+    questionPhoto.src = q.img 
 }
 
 function renderOptions (q){
@@ -135,13 +150,17 @@ function renderOptions (q){
         answerBtn.textContent = option
         answerBtn.id = idx
         answerBtn.addEventListener("click", handleAnswer)
-        answerButtons.appendChild(answerBtn)
+        questionList.appendChild(answerBtn)
     })
 }
 
 function handleAnswer (e){
     console.log (e.target.id)
-    console.log(answer == e.target.id)
+    if (answer == e.target.id) {
+        console.log ("correct")
+    } else {
+        console.log("incorrect")
+    }
 }
 
 let pToolQuestions = [
