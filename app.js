@@ -127,6 +127,7 @@ function getQuestion(){
 
 function renderQuestion (q){
     questionList.innerHTML = ""
+    questionPhoto.src = ""
     const question = document.createElement("p")
     question.textContent = q.question
     questionList.appendChild(question)
@@ -165,7 +166,7 @@ function handleAnswer (e){
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",
-    img:"https://imgbox.com/g8Ep78F8",
+    img:"assets/BandSaw.jpeg",
     id: "BandSaw",
     answer: 3,
     answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Band Saw"]},

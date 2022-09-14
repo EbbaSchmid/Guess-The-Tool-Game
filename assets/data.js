@@ -4,7 +4,7 @@
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",
-    img:"https://imgbox.com/g8Ep78F8",
+    img:"assets/BandSaw.jpeg",
     id: "BandSaw",
     answer: "Band Saw",
     answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Band Saw"]},
