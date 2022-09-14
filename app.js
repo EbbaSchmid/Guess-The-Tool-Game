@@ -67,6 +67,7 @@ const equipmentBtn = document.getElementById("equipBtn")
 init()
 
 // Main Category Buttons Below ...............
+
 powerToolsBtn.addEventListener('click', handleCategory) 
 
 handToolsBtn.addEventListener('click', handleCategory)
@@ -88,6 +89,7 @@ answerBBtn.addEventListener("click", findAnswer)
 answerCBtn.addEventListener("click", findAnswer)
 
 answerDBtn.addEventListener("click", findAnswer)
+// Not sure if these correct 
 
 
 
@@ -113,14 +115,14 @@ function findAnswer (){
 
     let photoIdx = currentQuestions[questionObjectIdx][img]
     let correctPhoto = currentQuestions[questionObjectIdx][img]
-    // In the two lines above, I'm trying to mimic the answers setup to target the correct img. 
+    // In the two lines above, I'm trying to mimic the answers setup to target the correct img. Not sure if they are correct.
 
     let answerABtn = currentQuestions[questionObjectIdx][answerIdx]
     let answerBBtn = currentQuestions[questionObjectIdx][answerIdx]
     let answerCBtn = currentQuestions[questionObjectIdx][answerIdx]
     let answerDBtn = currentQuestions[questionObjectIdx][answerIdx]
-
-
+// Not sure if I set these correctly
+}
 
 function handleCategory (e){
     console.log(e.target.id)
@@ -128,12 +130,16 @@ function handleCategory (e){
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getRandomQuestion()
+    // Need to add audio sound to category button click
+    // Need to display correct image from categories array of objects
 }
 
 function getRandomQuestion(){
     const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
     renderQuestion(currentQuestions[idx])
     questionObjectIdx = idx
+
+    // Not sure if this is how I shoudl render the corresponding img with question
     renderImg(currentQuestions[questionObjectIdx[img]])
 }
 
@@ -142,8 +148,9 @@ function renderQuestion (q, photo){
     question.textContent = q.question
     questionList.appendChild(question)
 
-    const img = document.createElement("img")
-    img.textContent = photo.img
+    // added in similar structure for imgs
+    const toolPhoto = document.createElement("img")
+    toolPhoto.textContent = photo.img
     gameSelection.appendChild(img)
 }
 
@@ -436,5 +443,4 @@ let categories = {
         text: "Equipment",
         questions: equipQuestions,
     }
-}
 }
