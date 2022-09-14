@@ -369,25 +369,23 @@ let equipQuestions = [
     answer: [0],
     answerOptions: ["Skip Hoist", "Building Crane", "Material Hoist", "Crawler Hoist"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/8KVH1nHm",
-//     id: "Excavator",
-//     answer: 
-//     answerOptions: [ ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/8KVH1nHm",
+    id: "Excavator",
+    answer: [3],
+    answerOptions: ["Crawler", "Backhoe", "Trencher", "Excavator"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/4GOY3d0C",
-//     id: "TowerCrane",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/4GOY3d0C",
+    id: "TowerCrane",
+    answer: [1],
+    answerOptions: ["Crawler Crane", "Tower Crane", "Top Crane", "Tower Hoist"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/8zbk0x3e",
-//     id: "SkidSteer",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/8zbk0x3e",
+    id: "SkidSteer",
+    answer: [2],
+    answerOptions: ["Forklift", "Dump Truck", "Sid Steer", "Crawler Loader"]},
 
 //     {question: "What Equipment is this?",
 //     img: "https://imgbox.com/0kHjibhb",
