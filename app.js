@@ -67,7 +67,7 @@ const equipmentBtn = document.getElementById("equipBtn")
 init()
 
 // Main Category Buttons Below ...............
-powerToolsBtn.addEventListener('click', handleCategory)
+powerToolsBtn.addEventListener('click', handleCategory) 
 
 handToolsBtn.addEventListener('click', handleCategory)
 
@@ -124,6 +124,7 @@ function handleCategory (e){
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getRandomQuestion()
+
 }
 
 function getRandomQuestion(){
