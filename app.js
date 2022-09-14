@@ -107,6 +107,7 @@ function handleCategory (e){
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getQuestion()
+
     // Need to add audio sound to category button click
 }
 
