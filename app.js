@@ -338,20 +338,18 @@ console.log(sToolQuestions)
 
 
 
-// let equipQuestions = [
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/upnIR4iy",
-//     id: "CrawlerCrane",
-//     answer: 
-//     answerOptions: [
-//     ]},
+let equipQuestions = [
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/upnIR4iy",
+    id: "CrawlerCrane",
+    answer: [0],
+    answerOptions: ["Crawler Crane", "Telescoping Crane", "Boom Crane", "Lifter"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/lYyKgHVu", 
-//     id: "Roller",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/lYyKgHVu", 
+    id: "Roller",
+    answer: [2],
+    answerOptions: ["Skid Steer", "Bobcat", "Rolling Compactor", "Crawler Compactor"]},
 
 //     {question: "What Equipment is this?",
 //     img: "https://imgbox.com/AhxYr1Fj",
@@ -409,8 +407,10 @@ console.log(sToolQuestions)
 //     answerOptions: [
 //     ]},
 
-// ]
+]
 // console.log (equipQuestions)
+
+
 
 let categories = { 
     powerToolBtn: {
