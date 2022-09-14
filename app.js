@@ -133,11 +133,6 @@ function renderQuestion (q){
     questionList.appendChild(question)
     renderOptions(q)
     renderPhoto(q)
-
-    // added in similar structure for imgs
-    // const toolPhoto = document.createElement("img")
-    // toolPhoto.textContent = photo.img
-    // gameSelection.appendChild(img)
 }
 
 function renderPhoto (q) {
@@ -267,27 +262,27 @@ let hToolQuestions = [
     answerOptions: ["Cabinet Square", "Speed Square", "Framing Square", "Mason Level"]},
 
     {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/zudIQS1K",
+    img: "assets/images/CClamp.jpg",
     id: "Cclamp",
-    answer: [0],
+    answer: 0,
     answerOptions: ["C-Clamp", "D-Clamp", "Tube Cutter", "C-Toggle"]},
 
     {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/vXHgHXQZ",
+    img: "assets/images/ChannelLocks.jpg",
     id: "ChannelLocks",
-    answer: [1],
+    answer: 1,
     answerOptions: ["Pliers", "Channel Locks", "Adjustable Wrench", "Pipe Wrench"]},
 
     {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/xwVM6c4X",
+    img: "assets/images/HexKeys.jpg",
     id: "HexKeys",
-    answer: [2],
+    answer: 2,
     answerOptions: ["Tom Keys", "L Keys", "Hex Keys", "Octo Keys"]},
 
     {question: "What Hand Tool is this?",
-    img: "https://imgbox.com/r2Q8RULs",
+    img: "assets/images/BallPeenHammer.jpg",
     id: "BallPeenHammer",
-    answer: [3],
+    answer: 3,
     answerOptions: ["Hammer", "Sledge Hammer", "Mallet", "Ball Peen Hammer"]},
 ]
 
