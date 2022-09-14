@@ -387,22 +387,20 @@ let equipQuestions = [
     answer: [2],
     answerOptions: ["Forklift", "Dump Truck", "Sid Steer", "Crawler Loader"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/0kHjibhb",
-//     id: "BoomLift",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/0kHjibhb",
+    id: "BoomLift",
+    answer: [3],
+    answerOptions: ["Scissor Lift", "Telescoping Hoist", "Skip Hoist", "Boom Lift"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/AmplMUaC",
-//     id: "ScissorLift",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/AmplMUaC",
+    id: "ScissorLift",
+    answer: [1],
+    answerOptions: ["Boom Lift", "Sissor Lift", "Elevator Lift", "Box Hoist"]},
 
 ]
-// console.log (equipQuestions)
+console.log (equipQuestions)
 
 
 
@@ -429,6 +427,6 @@ let categories = {
         audio: "equipSound",
         id: "equipBtn", 
         text: "Equipment",
-        // questions: equipQuestions,
+        questions: equipQuestions,
     }
 }
