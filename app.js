@@ -132,15 +132,21 @@ function handleCategory (e){
     getRandomQuestion()
     // Need to add audio sound to category button click
     // Need to display correct image from categories array of objects
+    // currentPhoto = categories[e.target.id].img
+    // getRandomPhoto()
+}
+
+// Not sure if this is how I should render the corresponding img with question
+function getRandomPhoto() {
+    const idx = Math.floor(Math.random()*(currentPhoto.length + 1))
+    renderImg(currentQuestions[idx])
+    questionObjectIdx = idx
 }
 
 function getRandomQuestion(){
     const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
     renderQuestion(currentQuestions[idx])
-    questionObjectIdx = idx
-
-    // Not sure if this is how I shoudl render the corresponding img with question
-    renderImg(currentQuestions[questionObjectIdx[img]])
+    questionObjectIdx = idx    
 }
 
 function renderQuestion (q, photo){
