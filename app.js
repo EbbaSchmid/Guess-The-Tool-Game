@@ -8,6 +8,7 @@ let currentQuestions
 let questionObjectIdx
 let winner
 let score
+let answer
 
 let powerToolSound = new Audio("../assets/drill.mp3")
 
@@ -36,13 +37,7 @@ const questionPhoto = document.getElementById("questionPhoto")
 
 const questionList = document.getElementById("questionList")
 
-const answerABtn = document.getElementById("answerABtn")
-
-const answerBBtn = document.getElementById("answerBBtn")
-
-const answerCBtn = document.getElementById("answerCBtn")
-
-const answerDBtn = document.getElementById("answerDBtn")
+const answerButtons = document.getElementById("answerButtons")
 
 
 
@@ -78,18 +73,9 @@ equipmentBtn.addEventListener('click', handleCategory)
 
 
 // Rotating Game Areas .................
-questionList.addEventListener("click", findAnswer)
 
-questionPhoto.addEventListener("click", findAnswer)
 
-answerABtn.addEventListener("click", findAnswer)
 
-answerBBtn.addEventListener("click", findAnswer)
-
-answerCBtn.addEventListener("click", findAnswer)
-
-answerDBtn.addEventListener("click", findAnswer)
-// Not sure if these correct 
 
 
 
@@ -109,20 +95,6 @@ function init () {
     // buttons(powerToolBtn)
 }
 
-function findAnswer (){
-    let answerIdx = currentQuestions[questionObjectIdx][answer]
-    let correctAnswer = currentQuestions[questionObjectIdx][answerOptions][answerIdx]
-
-    let photoIdx = currentQuestions[questionObjectIdx][img]
-    let correctPhoto = currentQuestions[questionObjectIdx][img]
-    // In the two lines above, I'm trying to mimic the answers setup to target the correct img. Not sure if they are correct.
-
-    let answerABtn = currentQuestions[questionObjectIdx][answerIdx]
-    let answerBBtn = currentQuestions[questionObjectIdx][answerIdx]
-    let answerCBtn = currentQuestions[questionObjectIdx][answerIdx]
-    let answerDBtn = currentQuestions[questionObjectIdx][answerIdx]
-// Not sure if I set these correctly
-}
 
 function handleCategory (e){
     console.log(e.target.id)
@@ -136,37 +108,47 @@ function handleCategory (e){
     // getRandomPhoto()
 }
 
-// Not sure if this is how I should render the corresponding img with question
-function getRandomPhoto() {
-    const idx = Math.floor(Math.random()*(currentPhoto.length + 1))
-    renderImg(currentQuestions[idx])
-    questionObjectIdx = idx
-}
 
 function getRandomQuestion(){
     const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
     renderQuestion(currentQuestions[idx])
     questionObjectIdx = idx    
+    answer = currentQuestions[idx].answer
 }
 
-function renderQuestion (q, photo){
+function renderQuestion (q){
     const question = document.createElement("p")
     question.textContent = q.question
     questionList.appendChild(question)
+    renderOptions(q)
 
     // added in similar structure for imgs
-    const toolPhoto = document.createElement("img")
-    toolPhoto.textContent = photo.img
-    gameSelection.appendChild(img)
+    // const toolPhoto = document.createElement("img")
+    // toolPhoto.textContent = photo.img
+    // gameSelection.appendChild(img)
 }
 
+function renderOptions (q){
+    q.answerOptions.forEach(function (option, idx){
+        console.log("option", option)
+        const answerBtn = document.createElement("button")
+        answerBtn.textContent = option
+        answerBtn.id = idx
+        answerBtn.addEventListener("click", handleAnswer)
+        answerButtons.appendChild(answerBtn)
+    })
+}
 
+function handleAnswer (e){
+    console.log (e.target.id)
+    console.log(answer == e.target.id)
+}
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",
     img:"https://imgbox.com/g8Ep78F8",
     id: "BandSaw",
-    answer: [3],
+    answer: 3,
     answerOptions: ["Saw", "Hammer Drill", "Hack Saw", "Band Saw"]},
 
     {question: "What Power Tool is this?",
