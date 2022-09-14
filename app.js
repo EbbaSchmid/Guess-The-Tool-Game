@@ -351,33 +351,29 @@ let equipQuestions = [
     answer: [2],
     answerOptions: ["Skid Steer", "Bobcat", "Rolling Compactor", "Crawler Compactor"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/AhxYr1Fj",
-//     id: "PileDriver",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/AhxYr1Fj",
+    id: "PileDriver",
+    answer: [3],
+    answerOptions: ["Backhoe", "Excavator", "Crawler", "Pile Driver"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/MYMz60Yo",
-//     id: "Trencher",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/MYMz60Yo",
+    id: "Trencher",
+    answer: [1],
+    answerOptions: ["Compactor", "Trencher", "Backhoe", "Excavator"]},
 
-//     {question: "What Equipment is this?",
-//     img: "https://imgbox.com/lj5c089W",
-//     id: "Skip",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Equipment is this?",
+    img: "https://imgbox.com/lj5c089W",
+    id: "Skip",
+    answer: [0],
+    answerOptions: ["Skip Hoist", "Building Crane", "Material Hoist", "Crawler Hoist"]},
 
 //     {question: "What Equipment is this?",
 //     img: "https://imgbox.com/8KVH1nHm",
 //     id: "Excavator",
 //     answer: 
-//     answerOptions: [
-//     ]},
+//     answerOptions: [ ]},
 
 //     {question: "What Equipment is this?",
 //     img: "https://imgbox.com/4GOY3d0C",
