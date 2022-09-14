@@ -285,26 +285,23 @@ let sToolQuestions = [
     answer: [2],
     answerOptions: ["Side Cutters", "Long Nosed Snips", "Aviation Snips", "Pliers"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/CQzQEcO9",
-//     id: "TubeCutter",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/CQzQEcO9",
+    id: "TubeCutter",
+    answer: [0],
+    answerOptions: ["Tube Cutter", "C-Clamp", "Glass Cutter", "C-Cutter"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/h3kFEmgg",
-//     id: "Striker",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/h3kFEmgg",
+    id: "Striker",
+    answer: [3],
+    answerOptions: ["Starter", "Line Hanger", "Tool Clip", "Striker"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/QwULHr85",
-//     id: "FeelerGuage",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/QwULHr85",
+    id: "FeelerGuage",
+    answer: [1],
+    answerOptions: ["Dimension Tabs", "Feeler Guages", "Measurement Guages", "Depth Guages"]},
 
 //     {question: "What Speciality Tool is this?",
 //     img: "https://imgbox.com/ISMlAkju",
