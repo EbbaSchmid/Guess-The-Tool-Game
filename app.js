@@ -7,9 +7,9 @@
 let currentQuestions 
 let questionObjectIdx
 let winner
-let score
+let score = 0
 let answer
-
+let questionCount = 0
 
 let powerToolSound = new Audio("../assets/drill.mp3")
 
@@ -39,6 +39,8 @@ const questionPhoto = document.getElementById("questionPhoto")
 const questionList = document.getElementById("questionList")
 
 const answerButtons = document.getElementById("answerButtons")
+
+const scoreText = document.getElementById("scoreCount")
 
 
 
@@ -112,6 +114,7 @@ function handleCategory (e){
 }
 
 
+
 function getQuestion(){
     questionObjectIdx++    
     if (currentQuestions[questionObjectIdx]){
@@ -121,8 +124,6 @@ function getQuestion(){
         console.log("game over")
         // can build out more for when the game is done
     }
-    
-
 }
 
 function renderQuestion (q){
@@ -153,10 +154,15 @@ function renderOptions (q){
 function handleAnswer (e){
     console.log (e.target.id)
     if (answer == e.target.id) {
+        score += 1
+        scoreText.textContent = score
         console.log ("correct")
     } else {
+        score -= 1
+        scoreText.textContent = score
         console.log("incorrect")
     }
+    console.log(score)
 }
 
 let pToolQuestions = [
