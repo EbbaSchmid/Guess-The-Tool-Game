@@ -303,43 +303,38 @@ let sToolQuestions = [
     answer: [1],
     answerOptions: ["Dimension Tabs", "Feeler Guages", "Measurement Guages", "Depth Guages"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/ISMlAkju",
-//     id: "PlumbBob",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/ISMlAkju",
+    id: "PlumbBob",
+    answer: [2],
+    answerOptions: ["Tri-Square", "Spade", "Plumb Bob", "Bobber"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/rKJNnLCO",
-//     id: "GlassCutter",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/rKJNnLCO",
+    id: "GlassCutter",
+    answer: [0],
+    answerOptions: ["Glass Cutter", "Tube Cutter", "Tile Cutter", "Line Marker"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/3zlwCSDj",
-//     id: "CornerChisel",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/3zlwCSDj",
+    id: "CornerChisel",
+    answer: [2],
+    answerOptions: ["Box Cutter", "Stamper", "Corner Chisel", "Angle Chisel"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/rRoNUbt7",
-//     id: "MagnetStick",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/rRoNUbt7",
+    id: "MagnetStick",
+    answer: [3],
+    answerOptions: ["Line Marker", "Telescoping Light", "Mirror", "Telescoping Magnet"]},
 
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/ZlOTmjTc",
-//     id: "AutoPunch",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/ZlOTmjTc",
+    id: "AutoPunch",
+    answer: [1],
+    answerOptions: ["Hole Maker", "Automatic Center Punch", "Center Punch", "Stabber"]},
 ]
 
-// console.log(sToolQuestions)
+console.log(sToolQuestions)
 
 
 
@@ -434,7 +429,7 @@ let categories = {
         audio: "specialToolSound",
         id: "specialToolBtn", 
         text: "Speciality Tools",
-        // questions: sToolQuestions,
+        questions: sToolQuestions,
     },
     equipBtn: {
         audio: "equipSound",
