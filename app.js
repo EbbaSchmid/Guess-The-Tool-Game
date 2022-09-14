@@ -272,21 +272,18 @@ let hToolQuestions = [
 console.log(hToolQuestions)
 
 
+let sToolQuestions = [
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/ZMNN70r5",
+    id: "BrickJointer",
+    answer: [1],
+    answerOptions: ["Masonry Line", "Brick Jointer", "Curved Pry Bar", "Marker Pipe"]},
 
-// let sToolQuestions = [
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/ZMNN70r5",
-//     id: "BrickJointer",
-//     answer: 
-//     answerOptions: [
-//     ]},
-
-//     {question: "What Speciality Tool is this?",
-//     img: "https://imgbox.com/HjO3qgcz",
-//     id: "AviationSnips",
-//     answer: 
-//     answerOptions: [
-//     ]},
+    {question: "What Speciality Tool is this?",
+    img: "https://imgbox.com/HjO3qgcz",
+    id: "AviationSnips",
+    answer: [2],
+    answerOptions: ["Side Cutters", "Long Nosed Snips", "Aviation Snips", "Pliers"]},
 
 //     {question: "What Speciality Tool is this?",
 //     img: "https://imgbox.com/CQzQEcO9",
@@ -343,7 +340,7 @@ console.log(hToolQuestions)
 //     answer: 
 //     answerOptions: [
 //     ]},
-// ]
+]
 
 // console.log(sToolQuestions)
 
