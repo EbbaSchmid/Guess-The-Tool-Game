@@ -77,6 +77,10 @@ equipmentBtn.addEventListener('click', handleCategory)
 
 
 // Rotating Game Areas .................
+questionList.addEventListener("click", findAnswer)
+
+questionPhoto.addEventListener("click", findAnswer)
+
 answerABtn.addEventListener("click", findAnswer)
 
 answerBBtn.addEventListener("click", findAnswer)
@@ -106,16 +110,16 @@ function init () {
 function findAnswer (){
     let answerIdx = currentQuestions[questionObjectIdx][answer]
     let correctAnswer = currentQuestions[questionObjectIdx][answerOptions][answerIdx]
+
+    let photoIdx = currentQuestions[questionObjectIdx][img]
+    let correctPhoto = currentQuestions[questionObjectIdx][img]
+    // In the two lines above, I'm trying to mimic the answers setup to target the correct img. 
+
     let answerABtn = currentQuestions[questionObjectIdx][answerIdx]
     let answerBBtn = currentQuestions[questionObjectIdx][answerIdx]
     let answerCBtn = currentQuestions[questionObjectIdx][answerIdx]
     let answerDBtn = currentQuestions[questionObjectIdx][answerIdx]
 
-}
-    // answerOptions.array[]
-    // access the questionObject of current questions with the questionObjectIdx access answers array with the answer idx number from object 
-    // currentquestions.idx answer.array[]
-    // search through question answer array to true/false if selected button is correct answer after answerButtons is clicked
 
 
 function handleCategory (e){
@@ -124,19 +128,23 @@ function handleCategory (e){
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getRandomQuestion()
-
 }
 
 function getRandomQuestion(){
     const idx = Math.floor(Math.random()*(currentQuestions.length + 1))
     renderQuestion(currentQuestions[idx])
     questionObjectIdx = idx
+    renderImg(currentQuestions[questionObjectIdx[img]])
 }
 
-function renderQuestion (q){
+function renderQuestion (q, photo){
     const question = document.createElement("p")
     question.textContent = q.question
     questionList.appendChild(question)
+
+    const img = document.createElement("img")
+    img.textContent = photo.img
+    gameSelection.appendChild(img)
 }
 
 
@@ -428,4 +436,5 @@ let categories = {
         text: "Equipment",
         questions: equipQuestions,
     }
+}
 }

@@ -23,7 +23,6 @@ h1 {
 #powerToolBtn {
     font-size: 32px;
     background-color:#925E78;
-    
 }
 
 #handToolBtn {
@@ -46,12 +45,12 @@ h1 {
 #intro-text {
     font-size: 24px;
     margin: 5%;
-    text-align:  center;
+    text-align: center;
 }
 
 /* Rotating Game Section........... */
 
-#game-section {
+#gameSection {
     display: flex;
     column-count: 2;
     margin: 0 0 40px 0;
@@ -70,6 +69,7 @@ h1 {
     align-self: start;
     width: 400px;
     height: 500px;
+
 }
 
 
@@ -87,10 +87,6 @@ h1 {
     width: 400px;
     height: 500px;
 }
-
-
-
-
 
 
 /* Other Buttons Below......... */
