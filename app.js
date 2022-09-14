@@ -2,8 +2,6 @@
 
 
 
-
-
 /*----------------- Variables (state) ---------------*/
 
 let currentQuestions 
