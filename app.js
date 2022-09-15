@@ -148,11 +148,18 @@ function renderOptions (q){
         const answerBtn = document.createElement("button")
         answerBtn.textContent = option
         answerBtn.id = idx
+        answerBtn.className = "optionBtn" 
         answerBtn.addEventListener("click", handleAnswer)
         questionList.appendChild(answerBtn)
     })
 }
 
+function deactBtns() {
+    const optionBtns = document.querySelectorAll(".optionBtn")
+    console.log(optionBtns)
+    optionBtns.forEach(b => b.removeEventListener("click", handleAnswer))
+// stop question function after answer, by deactiving other buttons if it's correct or incorrect. By removing Event Lisenter to other buttons. 
+}
 
 function handleAnswer (e){
     console.log (e.target)
@@ -168,6 +175,7 @@ function handleAnswer (e){
         console.log("incorrect")
     }
     console.log(score)
+    deactBtns()
 }
 
 // Timer functions below..........
@@ -180,7 +188,7 @@ let timer = setInterval(function() {
     }
 }, 1000)
 
-// startTimer()
+startTimer()
 
 function handleClickWin() {
     let message
@@ -195,10 +203,13 @@ function startTimer() {
 	if (timerIntervalId) {
 		seconds = 0
 		clearInterval(timerIntervalId)
-        renderMessage("")}
+        renderMessage("Test")}
 	timerIntervalId = setInterval(tick, 1000)
 }
 
+function renderMessage (message) {
+    console.log(message)
+}
 
 function tick() {
 	seconds++
