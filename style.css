@@ -93,27 +93,34 @@ h1 {
 
 .other-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #restartBtn {
-    font-size: 32px;
+    font-size: 52px;
+    height: 130px;
     background-color: #A0CED9;
-    justify-content: end;
     align-items: center;
+    margin: 30px 30px 30px 30px;
 }
 
 #nextBtn {
-    font-size: 32px;
+    font-size: 52px;
+    height: 130px;
     background-color: #A0CED9;
-    justify-content: end;
     align-items: center;
+    margin: 30px 30px 30px 30px;
 }
 
 #scoreCount {
-    font-size: 50px;
+    font-size: 100px;
+    display: flex;
+    margin: 60px 30px 30px 30px;
 }
 
+h3 {
+    font-size: 75px;
+}
 
 
 /* Page Footer Below............ */
