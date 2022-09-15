@@ -295,21 +295,21 @@ console.log(hToolQuestions)
 
 let sToolQuestions = [
     {question: "What Speciality Tool is this?",
-    img: "https://imgbox.com/ZMNN70r5",
+    img: "assets/images/BrickJointer.jpg",
     id: "BrickJointer",
-    answer: [1],
+    answer: 1,
     answerOptions: ["Masonry Line", "Brick Jointer", "Curved Pry Bar", "Marker Pipe"]},
 
     {question: "What Speciality Tool is this?",
-    img: "https://imgbox.com/HjO3qgcz",
+    img: "assets/images/AviationSnips.jpg",
     id: "AviationSnips",
-    answer: [2],
+    answer: 2,
     answerOptions: ["Side Cutters", "Long Nosed Snips", "Aviation Snips", "Pliers"]},
 
     {question: "What Speciality Tool is this?",
-    img: "https://imgbox.com/CQzQEcO9",
+    img: "assets/images/TubeCutter.jpg",
     id: "TubeCutter",
-    answer: [0],
+    answer: 0,
     answerOptions: ["Tube Cutter", "C-Clamp", "Glass Cutter", "C-Cutter"]},
 
     {question: "What Speciality Tool is this?",
