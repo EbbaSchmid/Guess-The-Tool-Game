@@ -118,7 +118,27 @@ footer {
     background-color: #5C6B73;
     color: #F1D302;
     width: auto;
-    height: 50px;
-    text-align: center;
-    font-size: 14px;
+    height: 130px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    /* text-align: center; */
+    
+}
+#logo {
+    width: 170px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 15px 40px;
+}
+
+#footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-left: 15px;
 }
