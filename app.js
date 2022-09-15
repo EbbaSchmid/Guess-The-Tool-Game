@@ -36,7 +36,7 @@ const winBtn = document.getElementById('win-button');
 const winMsg = document.getElementById('message');
 const resetBtn = document.getElementById('reset-button');
 
-let countdownEl = document.getElementById('countdown')
+
 
 
 const restartBtn = document.querySelector("startTime")
@@ -87,7 +87,7 @@ equipmentBtn.addEventListener('click', handleCategory)
 // Other Buttons Below .........................
 nextBtn.addEventListener('click', getQuestion)
 resetBtn.addEventListener('click', startTimer)
-winBtn.addEventListener('click', handleClickWin)
+
 
 
 /*----------- Functions -------------------*/
@@ -181,10 +181,10 @@ function handleAnswer (e){
 // Timer functions below..........
 
 let timer = setInterval(function() {
-    countdownEl = timeLeft + ' seconds remaining.';
+    timerEl.textContent = timeLeft;
     timeLeft -= 1;
     if (timeLeft < 0) {
-        countdownEl = 'Finished!'
+        timerEl.textContent = 'Finished!'
     }
 }, 1000)
 
