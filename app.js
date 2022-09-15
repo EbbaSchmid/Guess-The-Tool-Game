@@ -110,7 +110,7 @@ function handleCategory (e){
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getQuestion()
-
+    startTimer()
 
     // Need to add audio sound to category button click
 }
@@ -125,7 +125,6 @@ function getQuestion(){
         console.log("game over")
         // can build out more for when the game is done
     }
-    startTimer()
 }
 
 function renderQuestion (q){
@@ -180,24 +179,24 @@ function handleAnswer (e){
 
 // Timer functions below..........
 
-let timer = setInterval(function() {
-    timerEl.textContent = timeLeft;
-    timeLeft -= 1;
-    if (timeLeft < 0) {
-        timerEl.textContent = 'Finished!'
-    }
-}, 1000)
+// let timer = setInterval(function() {
+//     timerEl.textContent = timeLeft;
+//     timeLeft -= 1;
+//     if (timeLeft < 0) {
+//         timerEl.textContent = "Finished!"
+//     }
+// }, 1000)
 
-startTimer()
+// startTimer()
 
-function handleClickWin() {
-    let message
-    winTime = seconds
-    if (min < 1) { message = `YAAAAY, you won in ${sec} seconds!` }
-    else if (min < 2) {message = `YAAAAY, you won in ${min} minute and ${sec} seconds!`}
-    else {message = `YAAAAY, you won in ${min} minutes and ${sec} seconds!`}
-    renderMessage(message)
-}
+// function handleClickWin() {
+//     let message
+//     // winTime = seconds
+//     // if (min < 1) { message = `YAAAAY, you won in ${sec} seconds!` }
+//     // else if (min < 2) {message = `YAAAAY, you won in ${min} minute and ${sec} seconds!`}
+//     // else {message = `YAAAAY, you won in ${min} minutes and ${sec} seconds!`}
+//     renderMessage(message)
+// }
 
 function startTimer() {
 	if (timerIntervalId) {
