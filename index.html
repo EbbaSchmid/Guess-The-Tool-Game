@@ -15,6 +15,7 @@
     <h1 id = "header">Guess the Tool Game</h1>
 <main>
 
+
 <!---------- Category Buttons Below ------------->
 <div class ="category-buttons" id="categoryButtons">
     <button id="powerToolBtn">Power Tools</button>
@@ -34,7 +35,12 @@
 <div id = "gameSection">
     <img id ="questionPhoto">
 
-    <div id="countDown">Timer</div>
+    <!-- Timer Setup -->
+<body>
+    <h2 id='timer'></h2>
+    <button class='btn btn-success' id='win-button'>YOU WIN!!</button>
+   
+</body>
 
     <div id ="questionList">
     </div>
@@ -46,7 +52,7 @@
 
 <!---------- Other Buttons Below ---------->
     <div class ="other-buttons">
-        <button id="restartBtn">Restart</button>
+        <button class='btn btn-danger' id='reset-button'>Reset</button>
 
         <h3> Score Count: </h3>
         <div id="scoreCount"></div>

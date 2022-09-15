@@ -11,6 +11,10 @@ let score = 0
 let answer
 let questionCount = 0
 
+let timeLeft = 10
+let timerIntervalId
+let winTime, min, sec, seconds = 0
+
 let powerToolSound = new Audio("assets/audio/drill.mp3")
 
 let handToolSound = new Audio("assets/audio/hammering.mp3")
@@ -27,9 +31,15 @@ let equipSound = new Audio("assets/audio/excavator-working.mp3")
 const favicon = document.querySelector("#favicon")
 
 // Other Buttons Below .........................
-// const countdownEl = document.getElementById('countdown')
+const timerEl = document.getElementById('timer');
+const winBtn = document.getElementById('win-button');
+const winMsg = document.getElementById('message');
+const resetBtn = document.getElementById('reset-button');
 
-const restartBtn = document.querySelector("restart")
+let countdownEl = document.getElementById('countdown')
+
+
+const restartBtn = document.querySelector("startTime")
 
 const nextBtn = document.querySelector("#nextBtn")
 
@@ -82,9 +92,8 @@ equipmentBtn.addEventListener('click', handleCategory)
 
 // Other Buttons Below .........................
 nextBtn.addEventListener('click', getQuestion)
-
-// restartBtn.addEventListener('click', () =>{
-//     init () })
+resetBtn.addEventListener('click', startTimer)
+winBtn.addEventListener('click', handleClickWin)
 
 
 /*----------- Functions -------------------*/
@@ -108,7 +117,6 @@ function handleCategory (e){
 
     // Need to add audio sound to category button click
 }
-
 
 
 function getQuestion(){
@@ -161,6 +169,62 @@ function handleAnswer (e){
     }
     console.log(score)
 }
+
+// Timer functions below..........
+
+let timer = setInterval(function() {
+    countdownEl = timeLeft + ' seconds remaining.';
+    timeLeft -= 1;
+    if (timeLeft < 0) {
+        countdownEl = 'Finished!'
+				confetti.start(500)
+    }
+}, 1000)
+
+startTimer()
+
+function handleClickWin() {
+	confetti.start(500)
+    let message
+    winTime = seconds
+    if (min < 1) { message = `YAAAAY, you won in ${sec} seconds!` }
+    else if (min < 2) {message = `YAAAAY, you won in ${min} minute and ${sec} seconds!`}
+    else {message = `YAAAAY, you won in ${min} minutes and ${sec} seconds!`}
+    renderMessage(message)
+}
+
+function startTimer() {
+	if (timerIntervalId) {
+		seconds = 0
+		clearInterval(timerIntervalId)
+    renderMessage('PRESS THE BUTTON TO WIN!!!')
+	}
+	timerIntervalId = setInterval(tick, 1000)
+}
+
+function tick() {
+	seconds++
+	renderTime()
+}
+
+function renderMessage(message) {
+    winMsg.textContent = message
+}
+
+function renderTime() {
+    min = Math.floor(seconds / 60)
+    sec = seconds % 60
+    if (sec < 10) {
+    timerEl.textContent = `${min}:0${sec}`
+    } else {
+    timerEl.textContent = `${min}:${sec}`
+}
+}
+
+
+
+
+
 
 let pToolQuestions = [
     {question: "What Power Tool is this?",

@@ -115,9 +115,10 @@ h1 {
     justify-content: center;
 }
 
-#restartBtn {
+#reset-button {
     font-size: 52px;
     height: 130px;
+    width: 300px;
     background-color: #A0CED9;
     align-items: center;
     margin: 30px 30px 30px 30px;
