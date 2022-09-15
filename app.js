@@ -155,14 +155,16 @@ function renderOptions (q){
 
 
 function handleAnswer (e){
-    console.log (e.target.id)
+    console.log (e.target)
     if (answer == e.target.id) {
         score += 1
         scoreText.textContent = score 
+        e.target.style.backgroundColor = "green"
         console.log ("correct")
     } else {
         score -= 1
         scoreText.textContent = score
+        e.target.style.backgroundColor = "red"
         console.log("incorrect")
     }
     console.log(score)
