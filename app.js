@@ -83,12 +83,6 @@ specialityToolsBtn.addEventListener('click', handleCategory)
 equipmentBtn.addEventListener('click', handleCategory)
 
 
-// Rotating Game Areas .................
-
-
-
-
-
 
 // Other Buttons Below .........................
 nextBtn.addEventListener('click', getQuestion)
@@ -129,6 +123,7 @@ function getQuestion(){
         console.log("game over")
         // can build out more for when the game is done
     }
+    startTimer()
 }
 
 function renderQuestion (q){
@@ -162,6 +157,7 @@ function handleAnswer (e){
     if (answer == e.target.id) {
         score += 1
         scoreText.textContent = score 
+        playpowerToolSound()
         console.log ("correct")
     } else {
         score -= 1
@@ -178,14 +174,13 @@ let timer = setInterval(function() {
     timeLeft -= 1;
     if (timeLeft < 0) {
         countdownEl = 'Finished!'
-				confetti.start(500)
+	
     }
 }, 1000)
 
-startTimer()
+// startTimer()
 
 function handleClickWin() {
-	confetti.start(500)
     let message
     winTime = seconds
     if (min < 1) { message = `YAAAAY, you won in ${sec} seconds!` }
@@ -208,9 +203,6 @@ function tick() {
 	renderTime()
 }
 
-function renderMessage(message) {
-    winMsg.textContent = message
-}
 
 function renderTime() {
     min = Math.floor(seconds / 60)
