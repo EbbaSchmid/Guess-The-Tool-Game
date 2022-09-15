@@ -40,7 +40,7 @@ const resetBtn = document.getElementById('resetBtn')
 
 const nextBtn = document.querySelector("#nextBtn")
 
-
+const winningMessage = document.getElementById("winningMessage")
 
 // Rotating Game Areas .................
 const questionPhoto = document.getElementById("questionPhoto")
@@ -157,7 +157,6 @@ function deactBtns() {
 }
 
 function handleAnswer (e){
-    let winningMessage
     console.log (e.target)
     if (answer == e.target.id) {
         score += 1
@@ -172,12 +171,14 @@ function handleAnswer (e){
         console.log("incorrect")
     } 
     if (score === 10) {
-        winningMessage = "WOW!! You won this category!"
+        winningMessage.innerHTML = "WOW!! You won this category!"
+        clearInterval(timerIntervalId)
         } else {
             "Try again!"
+            // clearInterval(timerIntervalId)
         }
 
-console.log(winningMessage)
+    console.log(winningMessage)
     console.log(score)
     deactBtns()
 }
@@ -455,7 +456,7 @@ let equipQuestions = [
     img: "assets/images/Skip.jpg",
     id: "Skip",
     answer: 0,
-    answerOptions: ["Skip Hoist", "Building Crane", "Material Hoist", "Crawler Hoist"]},
+    answerOptions: ["Skip", "Building Crane", "Material Hoist", "Crawler Hoist"]},
 
     {question: "What Equipment is this?",
     img: "assets/images/Excavator.jpg",
@@ -485,7 +486,7 @@ let equipQuestions = [
     img: "assets/images/ScissorLift.jpg",
     id: "ScissorLift",
     answer: 1,
-    answerOptions: ["Boom Lift", "Sissor Lift", "Elevator Lift", "Box Hoist"]},
+    answerOptions: ["Boom Lift", "Scissor Lift", "Elevator Lift", "Box Hoist"]},
 ]
 
 console.log (equipQuestions)
