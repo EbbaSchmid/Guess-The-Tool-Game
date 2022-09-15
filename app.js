@@ -24,6 +24,8 @@ let equipSound = new Audio("../assets/excavator-working.mp3")
 
 /*------- Cached Element References ------------------*/
 
+const favicon = document.querySelector("#favicon")
+
 // Other Buttons Below .........................
 const countdownEl = document.getElementById('countdown')
 
