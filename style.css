@@ -67,7 +67,7 @@ h1 {
     flex-direction: column;
     justify-content: start;
     align-self: start;
-    width: 400px;
+    width: 600px;
     height: 500px;
 
 }
@@ -78,14 +78,25 @@ h1 {
 
 #questionList {
     border: 5px solid #F1D302;
-    font-size: 32px;
+    font-size: 42px;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-self: start;
-    width: 400px;
+    width: 600px;
     height: 500px;
+}
+
+#questionList > button {
+    background-color: #A0CED9;
+    width: 200px;
+    height: 150px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 
