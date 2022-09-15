@@ -14,10 +14,11 @@ The Score Counter, located between the Restart and Next Question buttons, will t
 
 
 Technologies Used:
-VS Code, GitHub, CSS, Javascript, HTML, FreeSound, ImgBin
+VS Code, GitHub, CSS, Javascript, HTML, FreeSound, ImgBin, Google Image Search
 
 Screenshot:
-
+{Input photo here}
+{Wireframe photo here}
 
 Future Developments:
 Add more categories and questions, structure photos more consistantly, more style overall.
