@@ -93,8 +93,10 @@ winBtn.addEventListener('click', handleClickWin)
 /*----------- Functions -------------------*/
 
 function init () {
-    // winner = null
-    // render ()
+    // winTime = 0 
+    // min = 0
+    // sec = 0
+    // seconds = 0
     console.log("hello")
     questionObjectIdx = -1
     
@@ -157,7 +159,6 @@ function handleAnswer (e){
     if (answer == e.target.id) {
         score += 1
         scoreText.textContent = score 
-        playpowerToolSound()
         console.log ("correct")
     } else {
         score -= 1
@@ -174,7 +175,6 @@ let timer = setInterval(function() {
     timeLeft -= 1;
     if (timeLeft < 0) {
         countdownEl = 'Finished!'
-	
     }
 }, 1000)
 
@@ -193,10 +193,10 @@ function startTimer() {
 	if (timerIntervalId) {
 		seconds = 0
 		clearInterval(timerIntervalId)
-    renderMessage('PRESS THE BUTTON TO WIN!!!')
-	}
+        renderMessage("")}
 	timerIntervalId = setInterval(tick, 1000)
 }
+
 
 function tick() {
 	seconds++
