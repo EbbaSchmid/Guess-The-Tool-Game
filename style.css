@@ -110,6 +110,12 @@ h1 {
     align-items: center;
 }
 
+#answerButtons {
+    width: 300px;
+    
+}
+
+
 
 /* Page Footer Below............ */
 footer {

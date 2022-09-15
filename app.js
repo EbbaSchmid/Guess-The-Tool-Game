@@ -11,13 +11,13 @@ let score = 0
 let answer
 let questionCount = 0
 
-let powerToolSound = new Audio("../assets/drill.mp3")
+let powerToolSound = new Audio("assets/audio/drill.mp3")
 
-let handToolSound = new Audio("../assets/hammering.mp3")
+let handToolSound = new Audio("assets/audio/hammering.mp3")
 
-let specialToolSound = new Audio("../assets/flame-ignition.mp3")
+let specialToolSound = new Audio("assets/audio/flame-ignition.mp3")
 
-let equipSound = new Audio("../assets/excavator-working.mp3")
+let equipSound = new Audio("assets/audio/excavator-working.mp3")
 
 
 
@@ -27,7 +27,7 @@ let equipSound = new Audio("../assets/excavator-working.mp3")
 const favicon = document.querySelector("#favicon")
 
 // Other Buttons Below .........................
-const countdownEl = document.getElementById('countdown')
+// const countdownEl = document.getElementById('countdown')
 
 const restartBtn = document.querySelector("restart")
 
@@ -39,8 +39,6 @@ const nextBtn = document.querySelector("#nextBtn")
 const questionPhoto = document.getElementById("questionPhoto")
 
 const questionList = document.getElementById("questionList")
-
-const answerButtons = document.getElementById("answerButtons")
 
 const scoreText = document.getElementById("scoreCount")
 
@@ -56,8 +54,6 @@ const specialityToolsBtn = document.getElementById("specialityToolBtn")
 
 const equipmentBtn = document.getElementById("equipBtn")
 
-
-// const powerToolQuestions = document.querySelector("")
 
 
 
@@ -150,6 +146,7 @@ function renderOptions (q){
         questionList.appendChild(answerBtn)
     })
 }
+
 
 function handleAnswer (e){
     console.log (e.target.id)
