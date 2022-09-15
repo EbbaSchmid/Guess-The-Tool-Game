@@ -23,21 +23,29 @@ h1 {
 #powerToolBtn {
     font-size: 32px;
     background-color:#925E78;
+    width: 250px;
+    height: 75px;
 }
 
 #handToolBtn {
     font-size: 32px;
     background-color:#925E78;
+    width: 250px;
+    height: 75px;
 }
 
 #specialityToolBtn {
     font-size: 32px;
     background-color:#925E78;
+    width: 250px;
+    height: 75px;
 }
 
 #equipBtn {
     font-size: 32px;
     background-color:#925E78;
+    width: 250px;
+    height: 75px;
 }
 
 
@@ -68,7 +76,7 @@ h1 {
     justify-content: start;
     align-self: start;
     width: 600px;
-    height: 500px;
+    height: 600px;
 
 }
 
@@ -85,7 +93,7 @@ h1 {
     justify-content: start;
     align-self: start;
     width: 600px;
-    height: 500px;
+    height: 600px;
 }
 
 #questionList > button {
