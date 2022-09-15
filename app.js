@@ -41,6 +41,7 @@ const resetBtn = document.getElementById('resetBtn')
 const nextBtn = document.querySelector("#nextBtn")
 
 const winningMessage = document.getElementById("winningMessage")
+const lostGame = document.getElementById("lostGame")
 
 // Rotating Game Areas .................
 const questionPhoto = document.getElementById("questionPhoto")
@@ -173,10 +174,12 @@ function handleAnswer (e){
     if (score === 10) {
         winningMessage.innerHTML = "WOW!! You won this category!"
         clearInterval(timerIntervalId)
-        } else {
-            "Try again!"
+    }
+    else if (score < 10 ) {
+            lostGame.innerHTML = "Womp Womp! Try again!"
+    }
             // clearInterval(timerIntervalId)
-        }
+        
 
     console.log(winningMessage)
     console.log(score)
