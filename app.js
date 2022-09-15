@@ -84,23 +84,21 @@ equipmentBtn.addEventListener('click', handleCategory)
 
 // Other Buttons Below .........................
 nextBtn.addEventListener('click', getQuestion)
-resetBtn.addEventListener('click', startTimer)
+resetBtn.addEventListener('click', resetBtnPush)
 
 
 
 /*----------- Functions -------------------*/
 
 function init () {
-    // winTime = 0 
-    // min = 0
-    // sec = 0
-    // seconds = 0
-    console.log("hello")
+
+    console.log("hello init")
     questionObjectIdx = -1
-    
-    // buttons(powerToolBtn)
 }
 
+function resetBtnPush () {
+// timer needs to stop, board needs to clear and score needs to clear, call init
+}
 
 function handleCategory (e){
     console.log(e.target.id)
@@ -179,6 +177,7 @@ function handleAnswer (e){
             lostGame.innerHTML = "Womp Womp! Try again!"
     }
             // clearInterval(timerIntervalId)
+            // create question answered tracker mimic after score, every time it's answered, 2nd info for score else if < 10 
         
 
     console.log(winningMessage)
@@ -187,16 +186,6 @@ function handleAnswer (e){
 }
 
 // Timer functions below..........
-
-
-// function handleClickWin() {
-//     let message
-//     // winTime = seconds
-//     // if (min < 1) { message = `YAAAAY, you won in ${sec} seconds!` }
-//     // else if (min < 2) {message = `YAAAAY, you won in ${min} minute and ${sec} seconds!`}
-//     // else {message = `YAAAAY, you won in ${min} minutes and ${sec} seconds!`}
-//     renderMessage(message)
-// }
 
 function startTimer() {
 	if (timerIntervalId) {
@@ -208,7 +197,6 @@ function startTimer() {
         // make score and timer clear if reset button is clicked
 }
 
-
 function renderMessage (message) {
     console.log(message)
 }
@@ -217,7 +205,6 @@ function tick() {
 	seconds++
 	renderTime()
 }
-
 
 function renderTime() {
     min = Math.floor(seconds / 60)
