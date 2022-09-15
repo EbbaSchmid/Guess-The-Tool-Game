@@ -17,8 +17,9 @@ Technologies Used:
 VS Code, GitHub, CSS, Javascript, HTML, FreeSound, ImgBin, Google Image Search
 
 Screenshot:
-{Input photo here}
-{Wireframe photo here}
+{Input photo here} 
+![Alt text](assets/images/WireFrameSetUp.jpg "Optional title")
+<!-- ![WireFrame Setup Img](/assets/images/WireFrameSetUp.jpg "WireFrame Setup Img") -->
 
 Future Developments:
 Add more categories and questions, structure photos more consistantly, more style overall.

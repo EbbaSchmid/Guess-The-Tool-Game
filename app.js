@@ -115,6 +115,7 @@ function handleCategory (e){
     console.log(currentQuestions)
     getQuestion()
 
+
     // Need to add audio sound to category button click
 }
 
