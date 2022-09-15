@@ -379,21 +379,21 @@ let equipQuestions = [
     answerOptions: ["Backhoe", "Excavator", "Crawler", "Pile Driver"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/MYMz60Yo",
+    img: "assets/images/Trencher.jpg",
     id: "Trencher",
-    answer: [1],
+    answer: 1,
     answerOptions: ["Compactor", "Trencher", "Backhoe", "Excavator"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/lj5c089W",
+    img: "assets/images/Skip.jpg",
     id: "Skip",
-    answer: [0],
+    answer: 0,
     answerOptions: ["Skip Hoist", "Building Crane", "Material Hoist", "Crawler Hoist"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/8KVH1nHm",
+    img: "assets/images/Excavator.jpg",
     id: "Excavator",
-    answer: [3],
+    answer: 3,
     answerOptions: ["Crawler", "Backhoe", "Trencher", "Excavator"]},
 
     {question: "What Equipment is this?",
