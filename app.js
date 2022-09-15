@@ -10,7 +10,7 @@ let winner
 let score = 0
 let answer
 let questionCount = 0
-
+let reset
 let timeLeft = 10
 let timerIntervalId
 let winTime, min, sec, seconds = 0
@@ -31,15 +31,12 @@ let equipSound = new Audio("assets/audio/excavator-working.mp3")
 const favicon = document.querySelector("#favicon")
 
 // Other Buttons Below .........................
-const timerEl = document.getElementById('timer');
-const winBtn = document.getElementById('win-button');
-const winMsg = document.getElementById('message');
-const resetBtn = document.getElementById('reset-button');
+const timerEl = document.getElementById('timer')
+// const winBtn = document.getElementById('win-button')
+const winMsg = document.getElementById('message')
+const resetBtn = document.getElementById('resetBtn')
 
 
-
-
-const restartBtn = document.querySelector("startTime")
 
 const nextBtn = document.querySelector("#nextBtn")
 
@@ -87,7 +84,7 @@ equipmentBtn.addEventListener('click', handleCategory)
 // Other Buttons Below .........................
 nextBtn.addEventListener('click', getQuestion)
 resetBtn.addEventListener('click', startTimer)
-
+resetBtn.onclick = reset
 
 
 /*----------- Functions -------------------*/
@@ -122,8 +119,8 @@ function getQuestion(){
         renderQuestion(currentQuestions[questionObjectIdx]) 
         answer = currentQuestions[questionObjectIdx].answer
     } else {
-        console.log("game over")
-        // can build out more for when the game is done
+    console.log("game over")
+    // can build out more for when the game is done
     }
 }
 
@@ -179,15 +176,6 @@ function handleAnswer (e){
 
 // Timer functions below..........
 
-// let timer = setInterval(function() {
-//     timerEl.textContent = timeLeft;
-//     timeLeft -= 1;
-//     if (timeLeft < 0) {
-//         timerEl.textContent = "Finished!"
-//     }
-// }, 1000)
-
-// startTimer()
 
 // function handleClickWin() {
 //     let message
@@ -201,10 +189,11 @@ function handleAnswer (e){
 function startTimer() {
 	if (timerIntervalId) {
 		seconds = 0
-		clearInterval(timerIntervalId)
-        renderMessage("Test")}
+		clearInterval(timerIntervalId)}
+        renderMessage("starttimer")
 	timerIntervalId = setInterval(tick, 1000)
 }
+
 
 function renderMessage (message) {
     console.log(message)
@@ -474,7 +463,7 @@ let equipQuestions = [
     img: "assets/images/SkidSteer.jpg",
     id: "SkidSteer",
     answer: 2,
-    answerOptions: ["Forklift", "Dump Truck", "Sid Steer", "Crawler Loader"]},
+    answerOptions: ["Forklift", "Dump Truck", "Skid Steer", "Crawler Loader"]},
 
     {question: "What Equipment is this?",
     img: "assets/images/BoomLift.jpg",
