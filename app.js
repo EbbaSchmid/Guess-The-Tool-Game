@@ -397,30 +397,30 @@ let equipQuestions = [
     answerOptions: ["Crawler", "Backhoe", "Trencher", "Excavator"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/4GOY3d0C",
+    img: "assets/images/TowerCrane.jpg",
     id: "TowerCrane",
-    answer: [1],
+    answer: 1,
     answerOptions: ["Crawler Crane", "Tower Crane", "Top Crane", "Tower Hoist"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/8zbk0x3e",
+    img: "assets/images/SkidSteer.jpg",
     id: "SkidSteer",
-    answer: [2],
+    answer: 2,
     answerOptions: ["Forklift", "Dump Truck", "Sid Steer", "Crawler Loader"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/0kHjibhb",
+    img: "assets/images/BoomLift.jpg",
     id: "BoomLift",
-    answer: [3],
+    answer: 3,
     answerOptions: ["Scissor Lift", "Telescoping Hoist", "Skip Hoist", "Boom Lift"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/AmplMUaC",
+    img: "assets/images/ScissorLift.jpg",
     id: "ScissorLift",
-    answer: [1],
+    answer: 1,
     answerOptions: ["Boom Lift", "Sissor Lift", "Elevator Lift", "Box Hoist"]},
-
 ]
+
 console.log (equipQuestions)
 
 
