@@ -361,21 +361,21 @@ console.log(sToolQuestions)
 
 let equipQuestions = [
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/upnIR4iy",
+    img: "assets/images/CrawlerCrane.jpg",
     id: "CrawlerCrane",
-    answer: [0],
+    answer: 0,
     answerOptions: ["Crawler Crane", "Telescoping Crane", "Boom Crane", "Lifter"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/lYyKgHVu", 
+    img: "assets/images/Roller.jpg", 
     id: "Roller",
-    answer: [2],
+    answer: 2,
     answerOptions: ["Skid Steer", "Bobcat", "Rolling Compactor", "Crawler Compactor"]},
 
     {question: "What Equipment is this?",
-    img: "https://imgbox.com/AhxYr1Fj",
+    img: "assets/images/PileDriver.jpg",
     id: "PileDriver",
-    answer: [3],
+    answer: 3,
     answerOptions: ["Backhoe", "Excavator", "Crawler", "Pile Driver"]},
 
     {question: "What Equipment is this?",
