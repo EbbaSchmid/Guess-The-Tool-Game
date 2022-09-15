@@ -84,7 +84,7 @@ equipmentBtn.addEventListener('click', handleCategory)
 // Other Buttons Below .........................
 nextBtn.addEventListener('click', getQuestion)
 resetBtn.addEventListener('click', startTimer)
-resetBtn.onclick = reset
+
 
 
 /*----------- Functions -------------------*/
@@ -154,22 +154,30 @@ function deactBtns() {
     const optionBtns = document.querySelectorAll(".optionBtn")
     console.log(optionBtns)
     optionBtns.forEach(b => b.removeEventListener("click", handleAnswer))
-// stop question function after answer, by deactiving other buttons if it's correct or incorrect. By removing Event Lisenter to other buttons. 
 }
 
 function handleAnswer (e){
+    let winningMessage
     console.log (e.target)
     if (answer == e.target.id) {
         score += 1
         scoreText.textContent = score 
         e.target.style.backgroundColor = "green"
         console.log ("correct")
-    } else {
+    } 
+    else {
         score -= 1
         scoreText.textContent = score
         e.target.style.backgroundColor = "red"
         console.log("incorrect")
-    }
+    } 
+    if (score === 10) {
+        winningMessage = "WOW!! You won this category!"
+        } else {
+            "Try again!"
+        }
+
+console.log(winningMessage)
     console.log(score)
     deactBtns()
 }
@@ -192,6 +200,8 @@ function startTimer() {
 		clearInterval(timerIntervalId)}
         renderMessage("starttimer")
 	timerIntervalId = setInterval(tick, 1000)
+    // if (resetBtn.onlick) {}
+        // make score and timer clear if reset button is clicked
 }
 
 
