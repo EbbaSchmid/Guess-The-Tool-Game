@@ -329,7 +329,7 @@ let hToolQuestions = [
     img: "assets/images/PipeWrench.jpg",
     id: "PipeWrench",
     answer: 1,
-    answerOptions: ["Socket", "Pipe Wrench", "Crescent Wrench", "Adjectable Wrench"]},
+    answerOptions: ["Socket", "Pipe Wrench", "Crescent Wrench", "Adjustable Wrench"]},
 
     {question: "What Hand Tool is this?",
     img: "assets/images/FramingSquare.jpg",
