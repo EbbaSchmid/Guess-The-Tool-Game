@@ -17,11 +17,8 @@ let winTime, min, sec, seconds = 0
 
 let powerToolSound = new Audio("assets/audio/drill.mp3")
 
-let handToolSound = new Audio("assets/audio/hammering.mp3")
-
 let specialToolSound = new Audio("assets/audio/flame-ignition.mp3")
 
-let equipSound = new Audio("assets/audio/excavator-working.mp3")
 
 
 
@@ -32,15 +29,17 @@ const favicon = document.querySelector("#favicon")
 
 // Other Buttons Below .........................
 const timerEl = document.getElementById('timer')
-// const winBtn = document.getElementById('win-button')
+
 const winMsg = document.getElementById('message')
 const resetBtn = document.getElementById('resetBtn')
+
 
 
 const nextBtn = document.querySelector("#nextBtn")
 
 const winningMessage = document.getElementById("winningMessage")
 const lostGameMessage = document.getElementById("lostGameMessage")
+const gameOverMessage = document.getElementById("gameOverMessage")
 
 // Rotating Game Areas .................
 const questionPhoto = document.getElementById("questionPhoto")
@@ -106,8 +105,6 @@ function handleCategory (e){
     console.log(currentQuestions)
     getQuestion()
     startTimer()
-
-    // Need to add audio sound to category button click
 }
 
 
@@ -118,6 +115,7 @@ function getQuestion(){
         answer = currentQuestions[questionObjectIdx].answer
     } else {
     console.log("game over")
+    gameOverMessage.innerHTML = "Game Over"
     // can build out more for when the game is done
     }
 }
@@ -205,11 +203,11 @@ function startTimer() {
 	if (timerIntervalId) {
 		seconds = 0
 		clearInterval(timerIntervalId)}
-        renderMessage("starttimer")
+    renderMessage("starttimer")
 	timerIntervalId = setInterval(tick, 1000)
 }
 
-// setTimeout(lostGameMessage, 5000)
+// setTimeout(lostGameMessage, 50)
 //     lostGameMessage.innerHTML = "Womp Womp! You are taking too long!"
 
 
