@@ -16,10 +16,18 @@ The Score Counter, located between the Restart and Next Question buttons, will t
 Technologies Used:
 VS Code, GitHub, CSS, Javascript, HTML, FreeSound, ImgBin, Google Image Search
 
-Screenshot:
-{Input photo here} 
 
+Wireframe Mock-Up Photos:
 ![WireFrame Setup Img](/assets/images/WireFrameSetUp.jpg "WireFrame Setup Img")
 
+
+Game Start Screen Photo:
+![Game Start Screen Img](/assets/images/GameStartScreen.jpg "Game Start Screen Img")
+
+
+Rendered Game Photo:
+![Game Rendered Img](/assets/images/GameRendered.jpg "Game Rendered Img")
+
+
 Future Developments:
-Add more categories and questions, structure photos more consistantly, more style overall.
+Add more categories and questions, structure photos more consistantly, more styling overall.
