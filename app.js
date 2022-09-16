@@ -191,6 +191,8 @@ function resetBtnPush () {
     questionPhoto.src = ""
     questionList.innerHTML = ""
     timerEl.textContent = ""
+    winningMessage.innerHTML = ""
+    gameOverMessage.innerHTML = ""
 }
 
 
