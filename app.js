@@ -116,7 +116,7 @@ function getQuestion(){
     } else {
     console.log("game over")
     gameOverMessage.innerHTML = "Game Over"
-    // can build out more for when the game is done
+    clearInterval(timerIntervalId)
     }
 }
 
@@ -194,9 +194,6 @@ function resetBtnPush () {
     winningMessage.innerHTML = ""
     gameOverMessage.innerHTML = ""
 }
-
-
-
 
 
 // Timer functions below..........
