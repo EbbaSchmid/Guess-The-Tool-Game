@@ -10,7 +10,7 @@ This game can be used for educational purposes to familiarize yourself with comm
 
 How to Play:
 To play the quiz game, select one of the category buttons and answer the 10 questions under each topic. 
-The Score Counter, located between the Restart and Next Question buttons, will track your score. To win, you must get all category 
+The Score Counter, located between the Restart and Next Question buttons, will track your score. To win, you must get a perfect score in a category.
 
 
 Technologies Used:
@@ -31,3 +31,5 @@ Rendered Game Photo:
 
 Future Developments:
 Add more categories and questions, structure photos more consistantly, more styling overall.
+
+Special Thanks: Instructors and TA's for assistance. Lily and Tiffany for emotional and technicial support.
