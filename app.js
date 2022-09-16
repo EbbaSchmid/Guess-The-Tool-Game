@@ -1,6 +1,3 @@
-/*---------------- Constants ----------------*/
-
-
 
 /*----------------- Variables (state) ---------------*/
 
@@ -18,8 +15,6 @@ let winTime, min, sec, seconds = 0
 let powerToolSound = new Audio("assets/audio/drill.mp3")
 
 let specialToolSound = new Audio("assets/audio/flame-ignition.mp3")
-
-
 
 
 
@@ -98,7 +93,6 @@ function init () {
     questionObjectIdx = -1
 }
 
-
 function handleCategory (e){
     console.log(e.target.id)
     currentQuestions = categories[e.target.id].questions
@@ -106,7 +100,6 @@ function handleCategory (e){
     getQuestion()
     startTimer()
 }
-
 
 function getQuestion(){
     questionObjectIdx++    
@@ -178,7 +171,6 @@ function handleAnswer (e){
     deactBtns()
 }
 
-
 function resetBtnPush () {
     score = 0
     winTime = 0 
@@ -206,10 +198,6 @@ function startTimer() {
 	timerIntervalId = setInterval(tick, 1000)
 }
 
-// setTimeout(lostGameMessage, 50)
-//     lostGameMessage.innerHTML = "Womp Womp! You are taking too long!"
-
-
 function renderMessage (message) {
     console.log(message)
 }
@@ -228,6 +216,9 @@ function renderTime() {
     timerEl.textContent = `${min}:${sec}`
     } 
 }
+
+
+
 
 
 
