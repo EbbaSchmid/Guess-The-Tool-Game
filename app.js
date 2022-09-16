@@ -40,7 +40,7 @@ const resetBtn = document.getElementById('resetBtn')
 const nextBtn = document.querySelector("#nextBtn")
 
 const winningMessage = document.getElementById("winningMessage")
-const lostGame = document.getElementById("lostGame")
+const lostGameMessage = document.getElementById("lostGameMessage")
 
 // Rotating Game Areas .................
 const questionPhoto = document.getElementById("questionPhoto")
@@ -174,6 +174,7 @@ function handleAnswer (e){
         winningMessage.innerHTML = "WOW!! You won this category!"
         clearInterval(timerIntervalId)
     }
+    
     console.log(winningMessage)
     console.log(score)
     deactBtns()
@@ -194,7 +195,6 @@ function resetBtnPush () {
     timerEl.textContent = ""
 }
 
-// timer needs to stop, board needs to clear and score needs to clear, call init
 
 
 
@@ -207,9 +207,11 @@ function startTimer() {
 		clearInterval(timerIntervalId)}
         renderMessage("starttimer")
 	timerIntervalId = setInterval(tick, 1000)
-    // if (resetBtn.onlick) {}
-        // make score and timer clear if reset button is clicked
 }
+
+// setTimeout(lostGameMessage, 5000)
+//     lostGameMessage.innerHTML = "Womp Womp! You are taking too long!"
+
 
 function renderMessage (message) {
     console.log(message)
@@ -227,11 +229,8 @@ function renderTime() {
     timerEl.textContent = `${min}:0${sec}`
     } else {
     timerEl.textContent = `${min}:${sec}`
+    } 
 }
-}
-
-
-
 
 
 
