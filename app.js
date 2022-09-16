@@ -37,7 +37,6 @@ const winMsg = document.getElementById('message')
 const resetBtn = document.getElementById('resetBtn')
 
 
-
 const nextBtn = document.querySelector("#nextBtn")
 
 const winningMessage = document.getElementById("winningMessage")
@@ -91,18 +90,18 @@ resetBtn.addEventListener('click', resetBtnPush)
 /*----------- Functions -------------------*/
 
 function init () {
-
+    score = 0
+    winTime = 0 
+    min = 0
+    sec = 0
+    seconds = 0
     console.log("hello init")
     questionObjectIdx = -1
 }
 
-function resetBtnPush () {
-// timer needs to stop, board needs to clear and score needs to clear, call init
-}
 
 function handleCategory (e){
     console.log(e.target.id)
-    // console.log(categories[e.target.id].questions)
     currentQuestions = categories[e.target.id].questions
     console.log(currentQuestions)
     getQuestion()
@@ -162,28 +161,43 @@ function handleAnswer (e){
         scoreText.textContent = score 
         e.target.style.backgroundColor = "green"
         console.log ("correct")
+        powerToolSound.play()
     } 
     else {
         score -= 1
         scoreText.textContent = score
         e.target.style.backgroundColor = "red"
         console.log("incorrect")
+        specialToolSound.play()
     } 
     if (score === 10) {
         winningMessage.innerHTML = "WOW!! You won this category!"
         clearInterval(timerIntervalId)
     }
-    else if (score < 10 ) {
-            lostGame.innerHTML = "Womp Womp! Try again!"
-    }
-            // clearInterval(timerIntervalId)
-            // create question answered tracker mimic after score, every time it's answered, 2nd info for score else if < 10 
-        
-
     console.log(winningMessage)
     console.log(score)
     deactBtns()
 }
+
+
+function resetBtnPush () {
+    score = 0
+    winTime = 0 
+    min = 0
+    sec = 0
+    seconds = 0
+    scoreText.textContent = score
+    questionObjectIdx = -1
+    clearInterval(timerIntervalId)
+    questionPhoto.src = ""
+    questionList.innerHTML = ""
+    timerEl.textContent = ""
+}
+
+// timer needs to stop, board needs to clear and score needs to clear, call init
+
+
+
 
 // Timer functions below..........
 
